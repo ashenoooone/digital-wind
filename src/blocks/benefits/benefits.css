@@ -1,0 +1,7 @@
+.benefits {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 240px;
+  box-sizing: border-box;
+}

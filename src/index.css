@@ -4,3 +4,14 @@
 @import url(./vendor/fonts/fonts.css);
 /* body */
 @import url(./blocks/body/body.css);
+/* benefits */
+@import url(./blocks/benefits/benefits.css);
+@import url(./blocks/benefits/__heading/benefits__heading.css);
+@import url(./blocks/benefits/__title/benefits__title.css);
+@import url(./blocks/benefits/__list-icon/benefits__list-icon.css);
+@import url(./blocks/benefits/__list/benefits__list.css);
+@import url(./blocks/benefits/__list-item/benefits__list-item.css);
+@import url(./blocks/benefits/__paragraph/benefits__list-paragraph.css);
+@import url(./blocks/benefits/__container/benefits__container.css);
+@import url(./blocks/benefits/__content/benefits__content.css);
+@import url(./blocks/benefits/__button/benefits__button.css);
