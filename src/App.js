@@ -1,12 +1,16 @@
 import Benefits from "./components/Benefits";
 import Header from "./components/Header";
+import Slider from "./components/Slider";
 
 function App() {
   return (
-    <div className="page">
+    <>
       <Header />
-      <Benefits />
-    </div>
+      <div className="page">
+        <Slider />
+        <Benefits />
+      </div>
+    </>
   );
 }
 

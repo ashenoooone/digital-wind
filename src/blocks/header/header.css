@@ -2,7 +2,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 1440px;
+    width: 100%;
     margin: 0 auto;
-    padding: 38px 0 0;
+    padding: 38px 240px 30px;
+    box-sizing: border-box;
+    border-bottom: 2px solid #E4E4E4;
 }
