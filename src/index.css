@@ -18,6 +18,16 @@
 @import url(./blocks/slider/slider.css);
 @import url(./blocks/slider/__title/slider__title.css);
 @import url(./blocks/slider/__subtitle/slider__subtitle.css);
+@import url(./blocks/slider/__cards/slider__cards.css);
+@import url(./blocks/slider/__info/slider__info.css);
+@import url(./blocks/slider/__card-container/slider__card-container.css);
+@import url(./blocks/slider/__about-button/slider__about-button.css);
+@import url(./blocks/slider/__row/slider__row.css);
+@import url(./blocks/slider/__card-img/slider__card-img.css);
+@import url(./blocks/slider/__card-description/slider__card-description.css);
+@import url(./blocks/slider/__card-time/slider__card-time.css);
+@import url(./blocks/slider/__card-title/slider__card-title.css);
+@import url(./blocks/slider/__card/slider__card.css);
 /* benefits */
 @import url(./blocks/benefits/benefits.css);
 @import url(./blocks/benefits/__heading/benefits__heading.css);

@@ -1,0 +1,11 @@
+.slider__about-button {
+  background-color: transparent;
+  border: none;
+  background-color: #2f80ed;
+  border-radius: 58px;
+  cursor: pointer;
+  color: white;
+  width: 212px;
+  height: 35px;
+  margin: 16px 0 0;
+}
