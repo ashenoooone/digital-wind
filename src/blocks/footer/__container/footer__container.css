@@ -3,6 +3,7 @@
   margin: 0 auto 32px;
   width: 100%;
   max-width: 1920px;
+  box-sizing: border-box;
   justify-content: space-between;
 }
 .footer__container:last-child {
