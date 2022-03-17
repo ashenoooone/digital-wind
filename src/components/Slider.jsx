@@ -12,42 +12,46 @@ const Slider = () => {
           Выберите интересующий курс и начинайте осваивать новую профессию!
         </p>
       </div>
-      <Card
-        title="Data Scientist"
-        description="Станьте самым востребованным специалистом современности"
-        time="Длительность: 24 месяца"
-        img={cardImgFirst}
-      />
-      <Card
-        title="Data Scientist"
-        description="Станьте самым востребованным специалистом современности"
-        time="Длительность: 24 месяца"
-        img={cardImgFirst}
-      />
-      <Card
-        title="Data Scientist"
-        description="Станьте самым востребованным специалистом современности"
-        time="Длительность: 24 месяца"
-        img={cardImgFirst}
-      />
-      <Card
-        title="Data Scientist"
-        description="Станьте самым востребованным специалистом современности"
-        time="Длительность: 24 месяца"
-        img={cardImgFirst}
-      />
-      <Card
-        title="Data Scientist"
-        description="Станьте самым востребованным специалистом современности"
-        time="Длительность: 24 месяца"
-        img={cardImgFirst}
-      />
-      <Card
-        title="Data Scientist"
-        description="Станьте самым востребованным специалистом современности"
-        time="Длительность: 24 месяца"
-        img={cardImgFirst}
-      />
+      <div className="slider__cards">
+        <div className="slider__row">
+          <Card
+            title="Data Scientist"
+            description="Станьте самым востребованным специалистом современности"
+            time="Длительность: 24 месяца"
+            img={cardImgFirst}
+          />
+          <Card
+            title="Data Scientist"
+            description="Станьте самым востребованным специалистом современности"
+            time="Длительность: 24 месяца"
+            img={cardImgFirst}
+          />
+          <Card
+            title="Data Scientist"
+            description="Станьте самым востребованным специалистом современности"
+            time="Длительность: 24 месяца"
+            img={cardImgFirst}
+          />
+          <Card
+            title="Data Scientist"
+            description="Станьте самым востребованным специалистом современности"
+            time="Длительность: 24 месяца"
+            img={cardImgFirst}
+          />
+          <Card
+            title="Data Scientist"
+            description="Станьте самым востребованным специалистом современности"
+            time="Длительность: 24 месяца"
+            img={cardImgFirst}
+          />
+          <Card
+            title="Data Scientist"
+            description="Станьте самым востребованным специалистом современности"
+            time="Длительность: 24 месяца"
+            img={cardImgFirst}
+          />
+        </div>
+      </div>
     </section>
   );
 };
