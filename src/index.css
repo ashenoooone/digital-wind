@@ -20,3 +20,13 @@
 @import url(./blocks/benefits/__container/benefits__container.css);
 @import url(./blocks/benefits/__content/benefits__content.css);
 @import url(./blocks/benefits/__button/benefits__button.css);
+/* footer */
+@import url(./blocks/footer/footer.css);
+@import url(./blocks/footer/__container/footer__container.css);
+@import url(./blocks/footer/__logo/footer__logo.css);
+@import url(./blocks/footer/__link/footer__link.css);
+@import url(./blocks/footer/__contacts/footer__contacts.css);
+@import url(./blocks/footer/__social-network/footer__social-network.css);
+@import url(./blocks/footer/__nav/footer__nav.css);
+@import url(./blocks/footer/__nav-item/footer__nav-item.css);
+@import url(./blocks/footer/__author/footer__author.css);

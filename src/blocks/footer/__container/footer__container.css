@@ -1,0 +1,8 @@
+.footer__container {
+  display: flex;
+  margin-bottom: 32px;
+  justify-content: space-between;
+}
+.footer__container:last-child {
+  margin-bottom: 0;
+}

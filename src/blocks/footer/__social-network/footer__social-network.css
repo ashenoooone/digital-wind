@@ -1,0 +1,12 @@
+.footer__social-network {
+  margin-right: 40px;
+  width: 32px;
+  height: 32px;
+  transition: all 0.2s ease;
+}
+.footer__social-network:last-child {
+  margin: 0;
+}
+.footer__social-network:hover {
+  opacity: 0.3;
+}
