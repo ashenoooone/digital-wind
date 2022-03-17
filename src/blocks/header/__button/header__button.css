@@ -6,6 +6,11 @@
   padding: 0;
   display: flex;
   cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.header__button:first-child:hover {
+  opacity: 0.3;
 }
 
 .header__button:last-child {
