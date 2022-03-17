@@ -47,6 +47,7 @@
 @import url(./blocks/reviews/__row/reviews__row.css);
 @import url(./blocks/reviews/__card-title/review__card-title.css);
 @import url(./blocks/reviews/__author/review__author.css);
-@import url(./blocks/reviews/);
-@import url(./blocks/reviews/);
-@import url(./blocks/reviews/);
+@import url(./blocks/reviews/__author-avatar/review__author-avatar.css);
+@import url(./blocks/reviews/__status/review__status.css);
+@import url(./blocks/reviews/__link/review__link.css);
+@import url(./blocks/reviews/__card-paragraph/review__card-paragraph.css);

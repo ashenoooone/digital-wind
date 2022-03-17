@@ -1,7 +1,7 @@
-.review__card-paragraph {
+.review__author-name {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  margin: 0 0 16px;
   line-height: 150%;
+  margin: 0;
 }

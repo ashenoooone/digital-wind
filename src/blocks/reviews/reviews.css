@@ -1,4 +1,5 @@
 .reviews {
   display: flex;
   flex-direction: column;
+  padding: 70px 110px 80px;
 }

@@ -1,3 +1,5 @@
 .review__author {
   display: flex;
+  margin-top: auto;
+  align-items: center;
 }
