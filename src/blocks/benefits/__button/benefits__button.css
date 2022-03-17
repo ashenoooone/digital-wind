@@ -9,12 +9,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: scale 0.1s ease-in-out, translateY 0.01s linear;
 }
 .benefits__button:hover {
-  background-color: #5297f1;
-  transform: scale(1.05);
+  background: rgba(47, 128, 237, 0.1);
+  color: #2f80ed;
 }
 .benefits__button:active {
-  transform: translateY(1px);
+  outline: 1px solid #367cff;
 }

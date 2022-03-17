@@ -1,23 +1,30 @@
 .header__button {
-    background-color: transparent;
-    border: none;
-    width: 32px;
-    height: 32px;
-    padding: 0;
-    display: flex;
-    cursor: pointer;
+  background-color: transparent;
+  border: none;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  display: flex;
+  cursor: pointer;
 }
 
 .header__button:last-child {
-    background-image: none;
-    margin-left: 40px;
-    background-color: #2F80ED;
-    border-radius: 58px;
-    width: 128px;
-    height: 43px;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 12px 40px;
+  background-image: none;
+  margin-left: 40px;
+  background-color: #2f80ed;
+  border-radius: 58px;
+  width: 128px;
+  height: 43px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 40px;
+}
+.header__button:hover {
+  background: rgba(47, 128, 237, 0.1);
+  color: #2f80ed;
+}
+.header__button:active {
+  outline: 1px solid #367cff;
 }
