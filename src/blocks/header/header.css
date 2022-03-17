@@ -1,10 +1,13 @@
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    margin: 0 auto;
-    padding: 38px 240px 30px;
-    box-sizing: border-box;
-    border-bottom: 2px solid #E4E4E4;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  padding: 38px 240px 30px;
+  box-sizing: border-box;
+  border-bottom: 2px solid #e4e4e4;
+  background-color: white;
+  position: sticky;
+  top: 0;
 }
