@@ -21,10 +21,10 @@
   justify-content: center;
   padding: 12px 40px;
 }
-.header__button:hover {
+.header__button:last-child:hover {
   background: rgba(47, 128, 237, 0.1);
   color: #2f80ed;
 }
-.header__button:active {
+.header__button:last-child:active {
   outline: 1px solid #367cff;
 }
