@@ -4,6 +4,6 @@
   box-sizing: border-box;
   border-bottom: 2px solid #e4e4e4;
   background-color: white;
-  position: sticky;
+  position: fixed;
   top: 0;
 }
