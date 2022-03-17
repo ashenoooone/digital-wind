@@ -7,8 +7,8 @@ function App() {
   return (
     <>
       <Header />
+      <Slider />
       <div className='page'>
-        <Slider />
         <Benefits />
       </div>
       <Footer />

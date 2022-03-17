@@ -39,3 +39,14 @@
 @import url(./blocks/footer/__nav/footer__nav.css);
 @import url(./blocks/footer/__nav-item/footer__nav-item.css);
 @import url(./blocks/footer/__author/footer__author.css);
+/* reviews */
+@import url(./blocks/reviews/reviews.css);
+@import url(./blocks/reviews/__title/reviews__title.css);
+@import url(./blocks/reviews/__card/reviews__card.css);
+@import url(./blocks/reviews/__image/review__image.css);
+@import url(./blocks/reviews/__row/reviews__row.css);
+@import url(./blocks/reviews/__card-title/review__card-title.css);
+@import url(./blocks/reviews/__author/review__author.css);
+@import url(./blocks/reviews/);
+@import url(./blocks/reviews/);
+@import url(./blocks/reviews/);

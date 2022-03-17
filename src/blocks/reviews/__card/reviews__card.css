@@ -1,0 +1,7 @@
+.reviews__card {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 8px;
+  background: rgba(232, 242, 255, 1);
+}
