@@ -1,14 +1,19 @@
 .header__link {
-    margin: 0 89px 0 0;
-    font-family: 'Rubik', arial, helvetica, sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    text-decoration: none;
-    line-height: 24px;
-    color: #2C415D;
+  margin: 0 89px 0 0;
+  font-family: "Rubik", arial, helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  text-decoration: none;
+  line-height: 24px;
+  color: #2c415d;
+  transition: all 0.2s ease;
+}
+
+.header__link:hover {
+  color: #367cff;
 }
 
 .header__link:last-child {
-    margin: 0;
+  margin: 0;
 }
