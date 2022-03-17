@@ -21,7 +21,7 @@ const Header = () => {
         </a>
       </div>
       <div className='header__buttons'>
-        <button className='header__button' src={navIcon}></button>
+        <img className='header__button' src={navIcon}></img>
         <button className='header__button'>Войти</button>
       </div>
     </header>
