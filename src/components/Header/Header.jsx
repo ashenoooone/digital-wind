@@ -31,13 +31,13 @@ const Header = () => {
           <Link to='error' className='header__link'>
             О компании
           </Link>
-          <Link to='#' className='header__link'>
+          <Link to='error' className='header__link'>
             Курсы
           </Link>
-          <Link to='#' className='header__link'>
+          <Link to='error' className='header__link'>
             Отзывы
           </Link>
-          <Link to='#' className='header__link'>
+          <Link to='error' className='header__link'>
             Контакты
           </Link>
         </div>

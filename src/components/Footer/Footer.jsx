@@ -4,6 +4,7 @@ import instLogo from '../../images/inst-logo.svg';
 import tgLogo from '../../images/tg-logo.svg';
 import justudyLogo from '../../images/logo-footer.svg';
 import './Footer.css';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -11,12 +12,8 @@ const Footer = () => {
       <div className='footer__container'>
         <div className='footer__contacts'>
           <img src={justudyLogo} alt='лого' className='footer__logo' />
-          <a href='#' className='footer__link'>
-            info@juststudy.online
-          </a>
-          <a href='#' className='footer__link'>
-            +7 450 300 50 05
-          </a>
+          <p className='footer__link'>info@juststudy.online</p>
+          <p className='footer__link'>+7 450 300 50 05</p>
         </div>
         <div className='footer__social-networks'>
           <a href='#' className='footer__social-network'>
@@ -32,18 +29,18 @@ const Footer = () => {
       </div>
       <div className='footer__container'>
         <nav className='footer__nav'>
-          <a href='#' className='footer__nav-item'>
+          <Link to='error' className='footer__nav-item'>
             О компании
-          </a>
-          <a href='#' className='footer__nav-item'>
+          </Link>
+          <Link to='error' className='footer__nav-item'>
             Курсы
-          </a>
-          <a href='#' className='footer__nav-item'>
+          </Link>
+          <Link to='error' className='footer__nav-item'>
             Отзывы
-          </a>
-          <a href='#' className='footer__nav-item'>
+          </Link>
+          <Link to='error' className='footer__nav-item'>
             Контакты
-          </a>
+          </Link>
         </nav>
         <p className='footer__author'>Сайт разработали CIFRO-VETER-TEAM</p>
       </div>

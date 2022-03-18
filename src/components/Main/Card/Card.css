@@ -42,8 +42,11 @@
   border: none;
   background-color: #2f80ed;
   border-radius: 58px;
-  cursor: pointer;
   color: white;
+  text-decoration: none;
+  padding: 8px 32px;
+  box-sizing: border-box;
+  display: flex;
   width: 212px;
   height: 35px;
   margin: 16px 0 0;

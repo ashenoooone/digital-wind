@@ -3,6 +3,7 @@ import ReviewsCard from '../ReviewsCard/ReviewsCard';
 import avatar_1 from '../../../images/review-avatar.svg';
 import avatar_2 from '../../../images/review-avatar-1.svg';
 import './Reviews.css';
+import { Link } from 'react-router-dom';
 
 const Reviews = () => {
   return (
@@ -33,9 +34,9 @@ const Reviews = () => {
           title='По итогам курса полученные знания я сразу смог применять в работе'
         />
       </div>
-      <a href='#' className='review__link'>
+      <Link to='error' className='review__link'>
         Все отзывы
-      </a>
+      </Link>
     </section>
   );
 };

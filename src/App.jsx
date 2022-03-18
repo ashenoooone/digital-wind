@@ -9,7 +9,7 @@ function App() {
     <Routes>
       <Route path='/' element={<Layout />}>
         <Route path='digital-wind' element={<Main />} />
-        <Route path='/error' element={<NotFoundPage />} />
+        <Route path='*' element={<NotFoundPage />} />
       </Route>
     </Routes>
   );

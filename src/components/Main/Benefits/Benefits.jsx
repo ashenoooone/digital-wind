@@ -2,6 +2,7 @@ import React from 'react';
 import starImage from '../../../images/star.svg';
 import benefitsImage from '../../../images/onlineClass.jpg';
 import './Benefits.css';
+import { Link } from 'react-router-dom';
 function Benefits(props) {
   return (
     <section className='benefits'>
@@ -45,9 +46,9 @@ function Benefits(props) {
               </p>
             </li>
           </ul>
-          <a href='#' className='benefits__button'>
+          <Link to='error' className='benefits__button'>
             Все курсы
-          </a>
+          </Link>
         </div>
         <img
           src={benefitsImage}
