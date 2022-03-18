@@ -1,0 +1,54 @@
+.creators {
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0 240px;
+  box-sizing: border-box;
+}
+
+.creators__title {
+  font-family: "Rubik", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 57px;
+  color: #2c415d;
+  margin: 80px 0 40px;
+}
+
+.creators__content {
+  display: grid;
+  grid-template-columns: repeat(3, 225px);
+  column-gap: 230px;
+}
+
+.creators__item {
+  display: flex;
+  flex-direction: column;
+}
+
+.creators__avatar {
+  border-radius: 10px;
+  margin: 0 0 10px;
+  width: 200px;
+  height: 200px;
+}
+
+.creators__name {
+  font-family: "Rubik", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  color: #2c415d;
+  margin: 0 0 8px;
+}
+
+.creators__job {
+  margin: 0;
+  font-family: "Rubik", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: rgba(44, 65, 93, 0.8);
+}

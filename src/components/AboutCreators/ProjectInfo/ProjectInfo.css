@@ -1,0 +1,50 @@
+.project-info {
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0 240px;
+  box-sizing: border-box;
+}
+
+.project-info__lists {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 16px;
+}
+
+.project-info__title {
+  font-family: "Rubik", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 57px;
+  color: #2c415d;
+}
+
+.project-info__content {
+  display: flex;
+}
+
+.project-info__content-title {
+  font-family: "Rubik", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  color: #2c415d;
+  margin: 0 0 8px 24px;
+}
+
+.project-info__content-description {
+  font-family: "Rubik", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: rgba(44, 65, 93, 0.8);
+  margin: 0 0 0 24px;
+}
+
+.project-info__img {
+  width: 32px;
+  height: 32px;
+}

@@ -1,0 +1,48 @@
+.instruction {
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0 240px;
+  box-sizing: border-box;
+}
+
+.instruction__title {
+  font-family: "Rubik", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 57px;
+  color: #2c415d;
+}
+
+.instruction__lists {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 120px;
+  padding: 0 56px;
+}
+
+.instruction__item-title {
+  font-family: "Rubik", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  color: #2c415d;
+  margin: 0 0 8px;
+}
+
+.instruction__item-description {
+  font-family: "Rubik", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: rgba(44, 65, 93, 0.8);
+  margin: 0;
+}
+
+.instruction__line {
+  padding: 60px 55px 0;
+  box-sizing: border-box;
+  width: 100%;
+}
