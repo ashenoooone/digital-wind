@@ -26,7 +26,9 @@ const Header = () => {
   return (
     <header className={headerVisibility ? `header` : `header header_hide`}>
       <div className="header__container">
-        <img src={logo} alt="логотип" className="header__img" />
+        <Link to="digital-wind">
+          <img src={logo} alt="логотип" className="header__img" />
+        </Link>
         <div className="header__nav">
           <Link to="info" className="header__link">
             О компании
