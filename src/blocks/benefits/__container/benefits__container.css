@@ -1,7 +1,0 @@
-.benefits__container {
-  display: flex;
-  width: 100%;
-  flex-direction: column;
-  justify-content: space-between;
-  margin-right: 112px;
-}

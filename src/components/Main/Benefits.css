@@ -1,0 +1,88 @@
+.benefits {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 48px;
+  box-sizing: border-box;
+}
+
+.benefits__button {
+  width: 170px;
+  box-sizing: border-box;
+  padding: 12px 40px;
+  background-color: #2f80ed;
+  border-radius: 58px;
+  color: white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.benefits__button:hover {
+  background: rgba(47, 128, 237, 0.1);
+  color: #2f80ed;
+}
+.benefits__button:active {
+  outline: 1px solid #367cff;
+}
+
+.benefits__container {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 112px;
+}
+
+.benefits__content {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 61px;
+}
+
+.benefits__heading {
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 150%;
+  margin: 0 auto 48px;
+}
+
+.benefits__image {
+  width: 600px;
+  height: 422px;
+}
+
+.benefits__list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+}
+
+.benefits__list-icon {
+  width: 32px;
+  height: 32px;
+  margin-right: 24px;
+}
+
+.benefits__list-item {
+  display: flex;
+  margin-bottom: 32px;
+}
+
+.benefits__list-paragraph {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  margin: 0;
+}
+
+.benefits__title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 150%;
+  margin: 0 0 32px;
+}
