@@ -1,7 +1,7 @@
 import React from "react";
-import "./ProjectInfo/ProjectInfo";
-import "./Instruction/Instruction";
-import "./Creators/Creators";
+import ProjectInfo from "./ProjectInfo/ProjectInfo";
+import Instruction from "./Instruction/Instruction";
+import Creators from "./Creators/Creators";
 
 function AboutCreators() {
   return (

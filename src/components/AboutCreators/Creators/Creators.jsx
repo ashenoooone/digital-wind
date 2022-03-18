@@ -2,6 +2,7 @@ import React from "react";
 import ildarAvatar from "../../../images/Ildar.png";
 import romanAvatar from "../../../images/Roman.png";
 import igorAvatar from "../../../images/Igor.png";
+import "./Creators.css";
 
 const Creators = () => {
   return (
