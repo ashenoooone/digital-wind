@@ -1,6 +1,8 @@
 import React from "react";
 import cardImgFirst from "../images/card2.jpg";
 import Card from "./Card";
+import "./Slider.css";
+
 const Slider = () => {
   return (
     <section className="slider">

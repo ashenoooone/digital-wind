@@ -1,0 +1,46 @@
+.slider {
+  padding: 60px 0 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+}
+
+.slider__info {
+  padding: 120px 240px 0;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1920px;
+}
+
+.slider__title {
+  font-family: "Rubik", arial, helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 57px;
+  color: #2c415d;
+  margin: 0 0 23px;
+}
+
+.slider__subtitle {
+  font-family: "Rubik", arial, helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  color: #2c415d;
+  margin: 0 0 44px;
+}
+
+.slider__cards {
+  background: #f1f1f1;
+  width: 100%;
+  padding: 50px 240px;
+  display: flex;
+}
+
+.slider__row {
+  display: flex;
+  margin: 0 auto;
+}
