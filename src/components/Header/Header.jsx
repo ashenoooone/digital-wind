@@ -45,7 +45,7 @@ const Header = () => {
         </div>
         <div className='header__buttons'>
           <img className='header__button' src={navIcon} />
-          <Link to='register' className='header__button'>
+          <Link to='/register' className='header__button'>
             Войти
           </Link>
         </div>

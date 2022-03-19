@@ -51,6 +51,7 @@
 }
 .registration__button {
   font-size: 16px;
+  text-decoration: none;
   cursor: pointer;
   line-height: 19px;
   color: #2c415d;

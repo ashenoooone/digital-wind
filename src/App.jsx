@@ -5,6 +5,7 @@ import Main from './components/Main/Main';
 import NotFoundPage from './components/NotFoundPage/NotFoundPage';
 import AboutCreators from './components/AboutCreators/AboutCreators';
 import Registration from './components/Register/Registration';
+import Login from './components/Login/Login';
 
 function App() {
   return (
@@ -12,8 +13,9 @@ function App() {
       <Route path='/' element={<Layout />}>
         <Route path='digital-wind' element={<Main />} />
         <Route path='*' element={<NotFoundPage />} />
-        <Route path='/info' element={<AboutCreators />} />
+        <Route path='info' element={<AboutCreators />} />
         <Route path='register' element={<Registration />} />
+        <Route path='login' element={<Login />} />
       </Route>
     </Routes>
   );

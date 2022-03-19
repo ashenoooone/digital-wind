@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import resume from '../../images/Resume.svg';
 import './Registration.css';
 
@@ -7,7 +8,7 @@ const Registration = () => {
     <section className='registration'>
       <div className='registration__container'>
         <h1 className='registration__title'>Регистрация</h1>
-        <form className='registration__form' novalidate>
+        <form className='registration__form' noValidate>
           <input
             className='registration__input'
             type='email'
@@ -27,9 +28,9 @@ const Registration = () => {
             <button type='submit' className='registration__submit-button'>
               Зарегистрироваться
             </button>
-            <button type='button' className='registration__button'>
+            <Link to='/login' className='registration__button'>
               Войти
-            </button>
+            </Link>
           </div>
         </form>
       </div>
