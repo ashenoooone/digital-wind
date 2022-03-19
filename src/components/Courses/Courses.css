@@ -1,0 +1,25 @@
+.courses {
+  font-family: 'Rubik';
+  display: flex;
+  flex-direction: column;
+  padding: 213px 240px;
+}
+.courses__title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 57px;
+  color: #2c415d;
+}
+.slider__card:first-child {
+  margin: 0;
+  margin-bottom: 42px;
+}
+.slider__card {
+  border: 1px solid #e4e4e4;
+  margin-bottom: 42px;
+}
+.courses__table {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(452px, 1fr));
+}

@@ -6,6 +6,7 @@ import NotFoundPage from './components/NotFoundPage/NotFoundPage';
 import AboutCreators from './components/AboutCreators/AboutCreators';
 import Registration from './components/Register/Registration';
 import Login from './components/Login/Login';
+import Courses from './components/Courses/Courses';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path='info' element={<AboutCreators />} />
         <Route path='register' element={<Registration />} />
         <Route path='login' element={<Login />} />
+        <Route path='courses' element={<Courses />} />
       </Route>
     </Routes>
   );
