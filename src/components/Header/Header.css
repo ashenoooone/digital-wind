@@ -3,6 +3,7 @@
   border: none;
   width: 32px;
   height: 32px;
+  box-sizing: border-box;
   padding: 0;
   display: flex;
   cursor: pointer;
@@ -25,6 +26,7 @@
   align-items: center;
   justify-content: center;
   padding: 12px 40px;
+  text-decoration: none;
 }
 .header__button:last-child:hover {
   background: rgba(47, 128, 237, 0.1);
@@ -50,7 +52,7 @@
 
 .header__link {
   margin: 0 89px 0 0;
-  font-family: "Rubik", arial, helvetica, sans-serif;
+  font-family: 'Rubik', arial, helvetica, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
