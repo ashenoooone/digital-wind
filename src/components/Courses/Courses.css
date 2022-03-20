@@ -12,9 +12,16 @@
   color: #2c415d;
 }
 
-.slider__card {
-  border: 1px solid #e4e4e4;
+
+
+.courses__table div:first-child {
+  margin: 0;
 }
+
+.courses__table div:last-child {
+  margin: 0;
+}
+
 .courses__table {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(452px, 1fr));
