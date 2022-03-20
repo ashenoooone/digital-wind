@@ -11,6 +11,7 @@
 }
 .registration__title {
   font-style: normal;
+  margin: 0 0 45px;
   font-weight: 500;
   font-size: 48px;
   line-height: 57px;
@@ -60,4 +61,25 @@
   background-color: transparent;
 }
 .registration__image {
+}
+@media screen and (max-width: 768px) {
+  .registration__title {
+    font-size: 48px;
+    line-height: 57px;
+    text-align: center;
+  }
+  .registration {
+    padding: 106px 0 40px;
+  }
+  .registration__form {
+    margin: 0;
+  }
+  .registration__submit-button {
+    margin: 0;
+  }
+  .registration__buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }

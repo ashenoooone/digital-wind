@@ -14,7 +14,7 @@
 }
 
 .slider__title {
-  font-family: "Rubik", arial, helvetica, sans-serif;
+  font-family: 'Rubik', arial, helvetica, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 48px;
@@ -24,7 +24,7 @@
 }
 
 .slider__subtitle {
-  font-family: "Rubik", arial, helvetica, sans-serif;
+  font-family: 'Rubik', arial, helvetica, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -58,4 +58,9 @@
   margin: 0 auto;
   column-gap: 32px;
   row-gap: 32px;
+}
+@media screen and (max-width: 1800px) {
+  .slider__info {
+    padding: 120px 60px 0;
+  }
 }
