@@ -36,3 +36,14 @@
 .error__return-button:active {
   outline: 1px solid #367cff;
 }
+@media screen and (max-width: 768px) {
+  .error-image {
+    width: 320px;
+    height: 165px;
+  }
+  .error-title {
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+  }
+}

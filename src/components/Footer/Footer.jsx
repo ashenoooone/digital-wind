@@ -29,10 +29,10 @@ const Footer = () => {
       </div>
       <div className='footer__container'>
         <nav className='footer__nav'>
-          <Link to='error' className='footer__nav-item'>
+          <Link to='info' className='footer__nav-item'>
             О компании
           </Link>
-          <Link to='error' className='footer__nav-item'>
+          <Link to='courses' className='footer__nav-item'>
             Курсы
           </Link>
           <Link to='error' className='footer__nav-item'>

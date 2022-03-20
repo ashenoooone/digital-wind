@@ -45,7 +45,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 240px;
+  padding: 0;
   max-width: 1920px;
   margin: 0 auto;
 }
@@ -77,11 +77,29 @@
 
 .header {
   width: 100%;
-  padding: 38px 0 30px;
+  padding: 38px 240px 30px;
   box-sizing: border-box;
   border-bottom: 2px solid #e4e4e4;
   background-color: white;
   position: fixed;
   top: 0;
   transition: all 0.3s ease-in-out;
+}
+@media screen and (max-width: 768px) {
+  .header {
+    padding: 21px 20px;
+  }
+  .header__img {
+    width: 148px;
+    height: 30px;
+  }
+  .header__button {
+    width: 32px;
+    height: 32px;
+  }
+  .header__burger {
+    width: 32px;
+    height: 32px;
+    margin-left: 28px;
+  }
 }
