@@ -35,12 +35,6 @@ const Footer = () => {
           <Link to='courses' className='footer__nav-item'>
             Курсы
           </Link>
-          <Link to='error' className='footer__nav-item'>
-            Отзывы
-          </Link>
-          <Link to='error' className='footer__nav-item'>
-            Контакты
-          </Link>
         </nav>
         <p className='footer__author'>Сайт разработали CIFRO-VETER-TEAM</p>
       </div>
