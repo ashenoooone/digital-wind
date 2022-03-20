@@ -1,9 +1,9 @@
-import React from 'react';
-import navIcon from '../../images/navIcon.svg';
-import logo from '../../images/logo.svg';
-import './Header.css';
-import { Link } from 'react-router-dom';
-import burger from '../../images/burder-header.svg';
+import React from "react";
+import navIcon from "../../images/navIcon.svg";
+import logo from "../../images/logo.svg";
+import "./Header.css";
+import { Link } from "react-router-dom";
+import burger from "../../images/burder-header.svg";
 
 const Header = () => {
   const [headerVisibility, setHeaderVisibility] = React.useState(true);
@@ -18,45 +18,45 @@ const Header = () => {
         setPos(window.scrollY);
       }
     };
-    window.addEventListener('scroll', scrollHandler);
+    window.addEventListener("scroll", scrollHandler);
     return () => {
-      window.removeEventListener('scroll', scrollHandler);
+      window.removeEventListener("scroll", scrollHandler);
     };
   }, [pos]);
 
   return (
     <header className={headerVisibility ? `header` : `header header_hide`}>
-      <div className='header__container'>
-        <Link to='digital-wind'>
-          <img src={logo} alt='логотип' className='header__img' />
+      <div className="header__container">
+        <Link to="digital-wind">
+          <img src={logo} alt="логотип" className="header__img" />
         </Link>
         {window.screen.width > 768 ? (
           <>
-            <div className='header__nav'>
-              <Link to='info' className='header__link'>
+            <div className="header__nav">
+              <Link to="info" className="header__link">
                 О компании
               </Link>
-              <Link to='courses' className='header__link'>
+              <Link to="courses" className="header__link">
                 Курсы
               </Link>
-              <Link to='profile' className='header__link'>
+              <Link to="profile" className="header__link">
                 Отзывы
               </Link>
-              <Link to='error' className='header__link'>
+              <Link to="error" className="header__link">
                 Контакты
               </Link>
             </div>
-            <div className='header__buttons'>
-              <img className='header__button' src={navIcon} />
-              <Link to='/register' className='header__button'>
+            <div className="header__buttons">
+              <img className="header__button" src={navIcon} />
+              <Link to="/login" className="header__button">
                 Войти
               </Link>
             </div>
           </>
         ) : (
-          <div className='header__buttons'>
-            <img className='header__button' src={navIcon} />
-            <img src={burger} className='header__burger' />
+          <div className="header__buttons">
+            <img className="header__button" src={navIcon} />
+            <img src={burger} className="header__burger" />
           </div>
         )}
       </div>

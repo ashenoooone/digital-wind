@@ -44,12 +44,12 @@
 .slider__cards::-webkit-scrollbar {
   height: 10px;
   border-radius: 7px;
-  background-color: #DBDBDB;
+  background-color: #dbdbdb;
   padding: 0 100px;
 }
 
 .slider__cards::-webkit-scrollbar-thumb {
-  background-color: #2F80ED;
+  background-color: #2f80ed;
   border-radius: 7px;
 }
 
