@@ -1,5 +1,5 @@
 .courses {
-  font-family: "Rubik";
+  font-family: 'Rubik';
   display: flex;
   flex-direction: column;
   padding: 213px 240px;
@@ -11,8 +11,6 @@
   line-height: 57px;
   color: #2c415d;
 }
-
-
 
 .courses__table div:first-child {
   margin: 0;
@@ -26,4 +24,17 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(452px, 1fr));
   gap: 32px;
+}
+
+@media screen and (max-width: 768px) {
+  .courses {
+    padding: 76px 20px 40px;
+  }
+  .courses__table {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+  .courses__title {
+    font-size: 24px;
+    line-height: 28px;
+  }
 }
