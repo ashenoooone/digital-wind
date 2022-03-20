@@ -6,7 +6,7 @@
 }
 
 .instruction__title {
-  font-family: "Rubik", Arial, Helvetica, sans-serif;
+  font-family: 'Rubik', Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 48px;
@@ -23,7 +23,7 @@
 }
 
 .instruction__item-title {
-  font-family: "Rubik", Arial, Helvetica, sans-serif;
+  font-family: 'Rubik', Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
@@ -32,8 +32,13 @@
   margin: 0 0 8px;
 }
 
+.instruction__container {
+  position: relative;
+  z-index: -1;
+}
+
 .instruction__item-description {
-  font-family: "Rubik", Arial, Helvetica, sans-serif;
+  font-family: 'Rubik', Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -46,4 +51,47 @@
   padding: 60px 55px 0;
   box-sizing: border-box;
   width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .instruction {
+    padding: 0 20px;
+  }
+  .instruction__title {
+    font-size: 28px;
+    line-height: 33px;
+    margin-bottom: 24px;
+  }
+  .instruction__item-title {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .instruction__item-description {
+    font-size: 14px;
+    line-height: 150%;
+  }
+  .instruction__lists {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .instruction__item {
+    margin: 0 0 32px 30px;
+  }
+  .instruction__item:last-of-type {
+    margin-bottom: 0;
+  }
+  .instruction__container {
+    background-image: url(../../../images/line320px.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  /* .instruction__line {
+    padding: 0;
+    height: 378px;
+    width: 18px;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    position: absolute;
+  } */
 }
