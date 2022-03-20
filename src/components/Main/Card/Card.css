@@ -5,10 +5,6 @@
   margin: 0;
 }
 
-.slider__card:first-child {
-  margin-left: auto;
-}
-
 .slider__card:last-child {
   margin: 0;
 }
