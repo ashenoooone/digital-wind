@@ -36,8 +36,21 @@
 .slider__cards {
   background: #f1f1f1;
   width: 100%;
-  padding: 50px 240px;
+  padding: 50px 0;
   display: flex;
+  overflow-x: scroll;
+}
+
+.slider__cards::-webkit-scrollbar {
+  height: 10px;
+  border-radius: 7px;
+  background-color: #DBDBDB;
+  padding: 0 100px;
+}
+
+.slider__cards::-webkit-scrollbar-thumb {
+  background-color: #2F80ED;
+  border-radius: 7px;
 }
 
 .slider__row {
