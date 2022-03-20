@@ -27,7 +27,7 @@ const Header = () => {
   return (
     <header className={headerVisibility ? `header` : `header header_hide`}>
       <div className='header__container'>
-        {window.screen.width > 768 ? (
+        {window.screen.width > 767 ? (
           <>
             <div style={{ display: 'flex' }}>
               <Link to='digital-wind'>

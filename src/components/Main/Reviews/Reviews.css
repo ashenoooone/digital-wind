@@ -37,3 +37,8 @@
 .review__link:active {
   outline: 1px solid #367cff;
 }
+@media screen and (max-width: 1279px) {
+  .reviews {
+    padding: 35px 20px 40px;
+  }
+}

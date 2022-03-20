@@ -66,7 +66,7 @@
 .slider__about_button:active {
   outline: 1px solid #367cff;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .slider__card-container {
     padding: 0;
   }
@@ -90,5 +90,13 @@
   }
   .slider__about_button {
     margin: 0;
+  }
+}
+@media screen and (max-width: 1439px) {
+  .slider__card-title {
+    font-size: 22px;
+  }
+  .slider__card-description {
+    font-size: 15px;
   }
 }

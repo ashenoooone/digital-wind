@@ -97,7 +97,25 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1440px) {
+  .header {
+    padding: 15px 60px 11px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .header__img {
+    margin-right: 50px;
+  }
+  .header__link {
+    margin-right: 30px;
+  }
+  .header__button:last-child {
+    margin-left: 20px;
+  }
+}
+
+@media screen and (max-width: 767px) {
   .header {
     padding: 21px 20px;
   }
