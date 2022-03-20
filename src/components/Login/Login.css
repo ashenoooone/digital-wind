@@ -3,6 +3,7 @@
   display: flex;
   font-family: 'Rubik';
   margin: 0 auto;
+  flex: 1;
 }
 .login__container {
   display: flex;
