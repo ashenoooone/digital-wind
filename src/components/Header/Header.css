@@ -52,7 +52,7 @@
 
 .header__link {
   margin: 0 89px 0 0;
-  font-family: 'Rubik', arial, helvetica, sans-serif;
+  font-family: "Rubik", arial, helvetica, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -85,6 +85,11 @@
   top: 0;
   transition: all 0.3s ease-in-out;
 }
+
+.header__img {
+  margin: 0 180px 0 0;
+}
+
 @media screen and (max-width: 768px) {
   .header {
     padding: 21px 20px;

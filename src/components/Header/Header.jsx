@@ -27,37 +27,38 @@ const Header = () => {
   return (
     <header className={headerVisibility ? `header` : `header header_hide`}>
       <div className="header__container">
-        <Link to="digital-wind">
-          <img src={logo} alt="логотип" className="header__img" />
-        </Link>
         {window.screen.width > 768 ? (
           <>
-            <div className="header__nav">
-              <Link to="info" className="header__link">
-                О компании
+            <div style={{ display: "flex" }}>
+              <Link to="digital-wind">
+                <img src={logo} alt="логотип" className="header__img" />
               </Link>
-              <Link to="courses" className="header__link">
-                Курсы
-              </Link>
-              <Link to="profile" className="header__link">
-                Отзывы
-              </Link>
-              <Link to="error" className="header__link">
-                Контакты
-              </Link>
+              <div className="header__nav">
+                <Link to="info" className="header__link">
+                  О компании
+                </Link>
+                <Link to="courses" className="header__link">
+                  Курсы
+                </Link>
+              </div>
             </div>
             <div className="header__buttons">
               <img className="header__button" src={navIcon} />
-              <Link to="/login" className="header__button">
+              <Link to="/register" className="header__button">
                 Войти
               </Link>
             </div>
           </>
         ) : (
-          <div className="header__buttons">
-            <img className="header__button" src={navIcon} />
-            <img src={burger} className="header__burger" />
-          </div>
+          <>
+            <Link to="digital-wind">
+              <img src={logo} alt="логотип" className="header__img" />
+            </Link>
+            <div className="header__buttons">
+              <img className="header__button" src={navIcon} />
+              <img src={burger} className="header__burger" />
+            </div>
+          </>
         )}
       </div>
     </header>
