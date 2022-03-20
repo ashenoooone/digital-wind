@@ -4,6 +4,7 @@
   margin: 0;
   border: 1px solid #e4e4e4;
   box-sizing: border-box;
+  display: flex;
 }
 
 .slider__card:first-child {
@@ -16,6 +17,9 @@
 
 .slider__card-container {
   padding: 32px 29px 32px 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .slider__card-description {
@@ -78,7 +82,6 @@
   }
   .slider__card {
     padding: 24px 20px;
-    display: flex;
     flex-direction: column;
     justify-content: space-between;
   }
