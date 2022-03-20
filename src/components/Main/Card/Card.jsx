@@ -13,7 +13,11 @@ const Card = (props) => {
           Подробнее о курсе
         </Link>
       </div>
-      <img src={props.img} alt={props.title} className={Style["slider__card-img"]} />
+      <img
+        src={props.img}
+        alt={props.title}
+        className={Style["slider__card-img"]}
+      />
     </div>
   );
 };
