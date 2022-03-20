@@ -36,7 +36,7 @@ const Header = () => {
           <Link to='courses' className='header__link'>
             Курсы
           </Link>
-          <Link to='error' className='header__link'>
+          <Link to='profile' className='header__link'>
             Отзывы
           </Link>
           <Link to='error' className='header__link'>

@@ -1,0 +1,46 @@
+.profile {
+  font-family: 'Rubik';
+  padding: 173px 240px 80px;
+}
+.profile__personal {
+  display: flex;
+}
+.profile__avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 128px;
+  margin-right: 40px;
+}
+.profile__info {
+  display: flex;
+  flex-direction: column;
+  margin-right: 32px;
+}
+.profile__name {
+  font-style: normal;
+  font-weight: 500;
+  margin: 0 0 12px;
+  font-size: 36px;
+  line-height: 43px;
+  color: #2c415d;
+}
+.profile__email {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  color: #2c415d;
+  margin: 0 0 24px;
+}
+
+.profile__courses {
+  display: flex;
+  padding-top: 60px;
+  column-gap: 100px;
+}
+.profile_courses-current,
+.profile_courses-completed {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}

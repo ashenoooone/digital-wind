@@ -7,6 +7,7 @@ import AboutCreators from './components/AboutCreators/AboutCreators';
 import Registration from './components/Register/Registration';
 import Login from './components/Login/Login';
 import Courses from './components/Courses/Courses';
+import Profile from './components/Profile/Profile';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path='register' element={<Registration />} />
         <Route path='login' element={<Login />} />
         <Route path='courses' element={<Courses />} />
+        <Route path='profile' element={<Profile />} />
       </Route>
     </Routes>
   );
