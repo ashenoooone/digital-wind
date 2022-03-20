@@ -6,7 +6,7 @@
 }
 
 .instruction__title {
-  font-family: 'Rubik', Arial, Helvetica, sans-serif;
+  font-family: "Rubik", Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 48px;
@@ -23,7 +23,7 @@
 }
 
 .instruction__item-title {
-  font-family: 'Rubik', Arial, Helvetica, sans-serif;
+  font-family: "Rubik", Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
@@ -38,7 +38,7 @@
 }
 
 .instruction__item-description {
-  font-family: 'Rubik', Arial, Helvetica, sans-serif;
+  font-family: "Rubik", Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -94,4 +94,20 @@
     z-index: -1;
     position: absolute;
   } */
+}
+
+@media screen and (max-width: 1439px) {
+  .instruction {
+    padding: 0 180px;
+  }
+}
+
+@media screen and (max-width: 1279px) {
+  .instruction__lists {
+    column-gap: 60px;
+  }
+
+  .instruction {
+    padding: 0 60px;
+  }
 }

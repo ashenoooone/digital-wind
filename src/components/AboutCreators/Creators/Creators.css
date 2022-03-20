@@ -7,7 +7,7 @@
 }
 
 .creators__title {
-  font-family: 'Rubik', Arial, Helvetica, sans-serif;
+  font-family: "Rubik", Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 48px;
@@ -35,7 +35,7 @@
 }
 
 .creators__name {
-  font-family: 'Rubik', Arial, Helvetica, sans-serif;
+  font-family: "Rubik", Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
@@ -46,14 +46,14 @@
 
 .creators__job {
   margin: 0;
-  font-family: 'Rubik', Arial, Helvetica, sans-serif;
+  font-family: "Rubik", Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
   color: rgba(44, 65, 93, 0.8);
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .creators {
     padding: 0 20px 40px;
   }
@@ -73,5 +73,29 @@
   .creators__job {
     font-size: 14px;
     line-height: 150%;
+  }
+}
+
+@media screen and (max-width: 1439px) {
+  .creators__content {
+    column-gap: 100px;
+  }
+
+  .creators {
+    padding: 0 180px 80px;
+  }
+}
+
+@media screen and (max-width: 1279px) {
+  .creators__content {
+    column-gap: 130px;
+  }
+
+  .creators {
+    padding: 0 60px 40px;
+  }
+
+  .creators__title {
+    margin: 40px 0;
   }
 }

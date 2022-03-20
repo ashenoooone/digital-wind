@@ -12,7 +12,7 @@
 }
 
 .project-info__title {
-  font-family: 'Rubik', Arial, Helvetica, sans-serif;
+  font-family: "Rubik", Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 48px;
@@ -26,7 +26,7 @@
 }
 
 .project-info__content-title {
-  font-family: 'Rubik', Arial, Helvetica, sans-serif;
+  font-family: "Rubik", Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
@@ -36,7 +36,7 @@
 }
 
 .project-info__content-description {
-  font-family: 'Rubik', Arial, Helvetica, sans-serif;
+  font-family: "Rubik", Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -74,5 +74,17 @@
   }
   .project-info__content {
     flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 1439px) {
+  .project-info {
+    padding: 173px 180px 77px;
+  }
+}
+
+@media screen and (max-width: 1279px) {
+  .project-info {
+    padding: 153px 60px 47px;
   }
 }
