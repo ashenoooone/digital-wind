@@ -56,3 +56,18 @@
 .login__buttons {
   display: flex;
 }
+@media screen and (max-width: 768px) {
+  .login__title {
+    font-size: 48px;
+    line-height: 57px;
+  }
+  .login {
+    padding: 106px 0 42px;
+  }
+  .login__container {
+    margin: 0;
+  }
+  .login__submit-button {
+    margin-right: 40px;
+  }
+}

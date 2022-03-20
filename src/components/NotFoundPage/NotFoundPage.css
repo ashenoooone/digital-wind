@@ -36,6 +36,9 @@
 .error__return-button:active {
   outline: 1px solid #367cff;
 }
+.error__return-button {
+  border: 0;
+}
 @media screen and (max-width: 768px) {
   .error-image {
     width: 320px;
