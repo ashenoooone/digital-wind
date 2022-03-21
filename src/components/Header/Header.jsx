@@ -27,39 +27,29 @@ const Header = () => {
   return (
     <header className={headerVisibility ? `header` : `header header_hide`}>
       <div className='header__container'>
-        {window.screen.width > 767 ? (
-          <>
-            <div style={{ display: 'flex' }}>
-              <Link to='digital-wind'>
-                <img src={logo} alt='логотип' className='header__img' />
-              </Link>
-              <div className='header__nav'>
-                <Link to='info' className='header__link'>
-                  О компании
-                </Link>
-                <Link to='courses' className='header__link'>
-                  Курсы
-                </Link>
-              </div>
-            </div>
-            <div className='header__buttons'>
-              <img className='header__button' src={navIcon} />
-              <Link to='/login' className='header__button'>
-                Войти
-              </Link>
-            </div>
-          </>
-        ) : (
-          <>
-            <Link to='digital-wind'>
-              <img src={logo} alt='логотип' className='header__img' />
+        <div style={{ display: 'flex' }}>
+          <Link to='digital-wind'>
+            <img src={logo} alt='логотип' className='header__img' />
+          </Link>
+          <div className='header__nav'>
+            <Link to='info' className='header__link'>
+              О компании
             </Link>
-            <div className='header__buttons'>
-              <img className='header__button' src={navIcon} />
-              <img src={burger} className='header__burger' />
-            </div>
-          </>
-        )}
+            <Link to='courses' className='header__link'>
+              Курсы
+            </Link>
+          </div>
+        </div>
+        <div className='header__buttons header__buttons-desktop'>
+          <img className='header__button' src={navIcon} />
+          <Link to='/login' className='header__button'>
+            Войти
+          </Link>
+        </div>
+        <div className='header__buttons header__buttons-mobile'>
+          <img className='header__button' src={navIcon} />
+          <img src={burger} className='header__burger' />
+        </div>
       </div>
     </header>
   );

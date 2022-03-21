@@ -91,6 +91,10 @@
   margin: 0 180px 0 0;
 }
 
+.header__buttons-mobile {
+  display: none;
+}
+
 @media screen and (max-width: 1800px) {
   .header {
     padding: 38px 60px 30px;
@@ -132,5 +136,11 @@
     width: 32px;
     height: 32px;
     margin-left: 28px;
+  }
+  .header__buttons-mobile {
+    display: flex;
+  }
+  .header__buttons-desktop {
+    display: none;
   }
 }
