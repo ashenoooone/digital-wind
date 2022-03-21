@@ -5,6 +5,7 @@
   border: 1px solid #e4e4e4;
   box-sizing: border-box;
   display: flex;
+  justify-content: space-between;
 }
 
 .slider__card:first-child {
