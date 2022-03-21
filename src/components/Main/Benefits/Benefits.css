@@ -17,6 +17,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: all 0.2s ease;
 }
 .benefits__button:hover {
   background: rgba(47, 128, 237, 0.1);
@@ -84,12 +85,12 @@
   font-weight: 600;
   font-size: 28px;
   line-height: 150%;
-  margin: 0;
+  margin: 0 0 32px;
 }
 
 @media screen and (max-width: 1439px) {
   .benefits__list-paragraph {
-    font-size: 15px;
+    font-size: 20px;
   }
   .benefits__title {
     font-size: 28px;
