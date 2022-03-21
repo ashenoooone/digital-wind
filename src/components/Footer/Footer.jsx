@@ -20,9 +20,6 @@ const Footer = () => {
             <img src={vkLogo} alt='логотип вк' />
           </a>
           <a href='#' className='footer__social-network'>
-            <img src={instLogo} alt='логотип инстаграмма' />
-          </a>
-          <a href='#' className='footer__social-network'>
             <img src={tgLogo} alt='логотип телеграма' />
           </a>
         </div>
