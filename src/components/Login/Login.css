@@ -1,7 +1,7 @@
 .login {
   padding: 213px 0 360px;
   display: flex;
-  font-family: 'Rubik';
+  font-family: "Rubik";
   margin: 0 auto;
   flex: 1;
 }
@@ -50,6 +50,10 @@
   text-decoration: none;
   display: flex;
   align-items: center;
+  transition: all 0.2 ease;
+}
+.login__registration-button:hover {
+  opacity: 0.5;
 }
 .login__form {
   display: flex;
