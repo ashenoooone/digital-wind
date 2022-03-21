@@ -4,10 +4,12 @@ import logo from '../../images/logo.svg';
 import './Header.css';
 import { Link } from 'react-router-dom';
 import burger from '../../images/burder-header.svg';
+import Menu from '../Menu/Menu';
 
 const Header = () => {
   const [headerVisibility, setHeaderVisibility] = React.useState(true);
   const [burgerActive, setBurgerActive] = React.useState(false);
+  const [isMenuActive, setIsMenuActive] = React.useState(false);
   const [pos, setPos] = React.useState(113);
   React.useEffect(() => {
     const scrollHandler = () => {
@@ -61,8 +63,12 @@ const Header = () => {
               ? 'header__burger header__burger_active'
               : 'header__burger'
           }
-          onClick={() => setBurgerActive(!burgerActive)}
+          onClick={() => {
+            setBurgerActive(!burgerActive);
+            setIsMenuActive(!isMenuActive);
+          }}
         />
+        <Menu isActive={isMenuActive} />
       </div>
     </header>
   );

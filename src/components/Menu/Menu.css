@@ -1,0 +1,45 @@
+.menu {
+  width: 300px;
+  height: 620px;
+  position: absolute;
+  padding: 32px;
+  box-sizing: border-box;
+  background-color: white;
+  top: 32px;
+  visibility: hidden;
+  opacity: 0;
+  display: flex;
+  transition: all 0.5s linear;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.menu_active {
+  opacity: 1;
+  visibility: visible;
+}
+.menu__enter-button {
+  padding: 12px 40px;
+  background: #2f80ed;
+  border-radius: 58px;
+  width: 128px;
+  margin-bottom: 40px;
+  height: 43px;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: white;
+}
+.menu__link {
+  font-size: 20px;
+  line-height: 24px;
+  color: #2c415d;
+  text-decoration: none;
+  margin-bottom: 32px;
+}
+.menu__top {
+  display: flex;
+  flex-direction: column;
+}
+.menu__bottom {
+  display: flex;
+  gap: 30px;
+}
