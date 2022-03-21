@@ -52,7 +52,7 @@
 }
 
 .header__link {
-  font-family: "Rubik", arial, helvetica, sans-serif;
+  font-family: 'Rubik', arial, helvetica, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -126,6 +126,10 @@
 @media screen and (max-width: 767px) {
   .header {
     padding: 21px 20px;
+    grid-template-columns: 1fr 1fr;
+  }
+  .header__nav {
+    display: none;
   }
   .header__img {
     width: 148px;

@@ -65,6 +65,11 @@
   margin: 0;
 }
 
+.footer__social-networks {
+  display: flex;
+  align-items: center;
+}
+
 .footer__nav-item:hover {
   color: #367cff;
 }
