@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/digital-wind/static/css/main.ec2c80a1.css",
-    "main.js": "/digital-wind/static/js/main.f9e06c22.js",
+    "main.css": "/digital-wind/static/css/main.f6fc6f1a.css",
+    "main.js": "/digital-wind/static/js/main.da79b0b3.js",
     "static/js/787.06a814a8.chunk.js": "/digital-wind/static/js/787.06a814a8.chunk.js",
     "static/media/Rubik-Regular.ttf": "/digital-wind/static/media/Rubik-Regular.da39336cfcac7980f2f1.ttf",
     "static/media/Rubik-Medium.ttf": "/digital-wind/static/media/Rubik-Medium.5bd2b2c6ad8019567605.ttf",
@@ -17,7 +17,7 @@
     "static/media/Error-404.svg": "/digital-wind/static/media/Error-404.affa6d7f6668c9516ce14f283f779daf.svg",
     "static/media/RubikMonoOne-Regular.woff": "/digital-wind/static/media/RubikMonoOne-Regular.f632f9a645aced58671e.woff",
     "static/media/login.svg": "/digital-wind/static/media/login.698b9abdf997672554c4265695b38e3c.svg",
-    "static/media/onlineClass.jpg": "/digital-wind/static/media/onlineClass.a8dbe7f576a0b7b65d36.jpg",
+    "static/media/onlineClass.svg": "/digital-wind/static/media/onlineClass.bab8f97dc426fc1360d458bf38cfcad8.svg",
     "static/media/card2.jpg": "/digital-wind/static/media/card2.e0b13e721edf75ea91eb.jpg",
     "static/media/Resume.svg": "/digital-wind/static/media/Resume.26fdeeed4c09a4f3b7929363569b5985.svg",
     "static/media/logo.svg": "/digital-wind/static/media/logo.e7fd2363935770e7eb655fff4b040f10.svg",
@@ -28,19 +28,21 @@
     "static/media/settings-button.svg": "/digital-wind/static/media/settings-button.b71dac2bfb8532fd4678cc9880b9a427.svg",
     "static/media/inst-logo.svg": "/digital-wind/static/media/inst-logo.1091a9f0721d1fc655ed688777cb1df6.svg",
     "static/media/vk-logo.svg": "/digital-wind/static/media/vk-logo.bc9c4bc8e6fade3d31c3e0705e91c8fb.svg",
+    "static/media/vk-logo-black.svg": "/digital-wind/static/media/vk-logo-black.3cbc281877efd2abe616e7e3910599c2.svg",
     "static/media/navIcon.svg": "/digital-wind/static/media/navIcon.a01dc71f5400b288ddc92258ceccdec0.svg",
     "static/media/line320px.svg": "/digital-wind/static/media/line320px.dfc938afd5eec33221f717c9f83ea3a3.svg",
     "index.html": "/digital-wind/index.html",
+    "static/media/line.svg": "/digital-wind/static/media/line.af40a9659bb1337cc1aa36545a10c76f.svg",
     "static/media/star.svg": "/digital-wind/static/media/star.d3b24ccf9852f2d4589b86d6f29d717f.svg",
-    "static/media/line.svg": "/digital-wind/static/media/line.fcf265d6cf4fdf70b09bb9bdfb1e4d97.svg",
+    "static/media/tg-logo-black.svg": "/digital-wind/static/media/tg-logo-black.5eca023e62790279b4dc61531cf79e34.svg",
     "static/media/tg-logo.svg": "/digital-wind/static/media/tg-logo.b9ce0e31b5609f9ebe7f9ad67625795d.svg",
     "static/media/burder-header.svg": "/digital-wind/static/media/burder-header.4a8fb02c5471b0a45a16014d53350dcb.svg",
-    "main.ec2c80a1.css.map": "/digital-wind/static/css/main.ec2c80a1.css.map",
-    "main.f9e06c22.js.map": "/digital-wind/static/js/main.f9e06c22.js.map",
+    "main.f6fc6f1a.css.map": "/digital-wind/static/css/main.f6fc6f1a.css.map",
+    "main.da79b0b3.js.map": "/digital-wind/static/js/main.da79b0b3.js.map",
     "787.06a814a8.chunk.js.map": "/digital-wind/static/js/787.06a814a8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ec2c80a1.css",
-    "static/js/main.f9e06c22.js"
+    "static/css/main.f6fc6f1a.css",
+    "static/js/main.da79b0b3.js"
   ]
 }
