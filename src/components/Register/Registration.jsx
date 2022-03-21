@@ -34,11 +34,7 @@ const Registration = () => {
           </div>
         </form>
       </div>
-      {window.screen.width > 768 ? (
-        <img src={resume} alt='резюме' className='registration__image' />
-      ) : (
-        <></>
-      )}
+      <img src={resume} alt='резюме' className='registration__image' />
     </section>
   );
 };

@@ -25,11 +25,7 @@ const Login = () => {
           </div>
         </form>
       </div>
-      {window.screen.width > 768 ? (
-        <img src={loginImage} alt='' className='login__image' />
-      ) : (
-        <></>
-      )}
+      <img src={loginImage} alt='' className='login__image' />
     </section>
   );
 };

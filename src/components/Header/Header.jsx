@@ -47,7 +47,12 @@ const Header = () => {
         </Link>
       </div>
       <div className='header__buttons header__buttons-mobile'>
-        <img className='header__button' alt='кнопка' src={navIcon} />
+        <img
+          className='header__button'
+          alt='кнопка'
+          src={navIcon}
+          style={{ display: 'none' }}
+        />
         <img
           src={burger}
           alt='бургер'

@@ -8,6 +8,8 @@
 .registration__container {
   display: flex;
   flex-direction: column;
+  margin-right: 164px;
+  justify-content: center;
 }
 .registration__title {
   font-style: normal;
@@ -20,7 +22,6 @@
 .registration__form {
   display: flex;
   flex-direction: column;
-  margin-right: 164px;
 }
 .registration__input {
   font-family: 'Rubik';
@@ -62,11 +63,27 @@
 }
 .registration__image {
 }
-@media screen and (max-width: 768px) {
+
+@media screen and (max-width: 1024px) {
+  .registration {
+    padding: 124px 0 82px;
+  }
+  .registration__container {
+    margin-right: 80px;
+  }
+  .registration__image {
+    width: 325px;
+  }
+}
+
+@media screen and (max-width: 767px) {
   .registration__title {
     font-size: 48px;
     line-height: 57px;
     text-align: center;
+  }
+  .registration__image {
+    display: none;
   }
   .registration {
     padding: 106px 0 40px;
@@ -81,5 +98,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
+  .registration__container {
+    margin: 0;
   }
 }
