@@ -89,6 +89,31 @@
   opacity: 0.3;
 }
 
+.footer__email {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 120%;
+  text-decoration: none;
+  display: block;
+  color: white;
+  transition: all 0.2s ease;
+  margin-right: 32px;
+}
+
+.footer__number {
+  margin: 0;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 120%;
+  text-decoration: none;
+  display: block;
+  color: white;
+  transition: all 0.2s ease;
+  margin-right: 32px;
+}
+
 .footer {
   width: 100%;
   padding: 32px 240px 44px;
@@ -116,6 +141,17 @@
     font-size: 15px;
     margin-right: 13px;
   }
+
+  .footer__email {
+    font-size: 15px;
+    margin-right: 13px;
+  }
+
+  .footer__number {
+    font-size: 15px;
+    margin: 0;
+  }
+
   .footer__social-network {
     width: 16px;
     height: 16px;
@@ -147,6 +183,14 @@
     font-size: 20px;
     line-height: 24px;
     margin: 0 0 12px;
+  }
+  .footer__email {
+    font-size: 20px;
+    line-height: 24px;
+    margin: 0 0 12px;
+  }
+  .footer__number {
+    margin: 0;
   }
   .footer__link:last-of-type {
     margin-bottom: 24px;
