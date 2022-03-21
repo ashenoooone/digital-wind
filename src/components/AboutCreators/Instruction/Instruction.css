@@ -6,7 +6,7 @@
 }
 
 .instruction__title {
-  font-family: "Rubik", Arial, Helvetica, sans-serif;
+  font-family: 'Rubik', Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 48px;
@@ -18,12 +18,12 @@
 .instruction__lists {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  column-gap: 120px;
+  column-gap: 90px;
   padding: 0 56px;
 }
 
 .instruction__item-title {
-  font-family: "Rubik", Arial, Helvetica, sans-serif;
+  font-family: 'Rubik', Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
@@ -38,7 +38,7 @@
 }
 
 .instruction__item-description {
-  font-family: "Rubik", Arial, Helvetica, sans-serif;
+  font-family: 'Rubik', Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;

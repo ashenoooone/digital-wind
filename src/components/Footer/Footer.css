@@ -153,9 +153,6 @@
   }
 
   .footer__social-network {
-    width: 16px;
-    height: 16px;
-    margin-right: 20px;
   }
   .footer__nav-item {
     font-size: 15px;
@@ -202,14 +199,16 @@
   .footer__nav {
     flex-direction: column;
   }
-  .footer__social-network {
-    margin: 0 10px 0 0;
-  }
   .footer__container {
     flex-direction: column;
     justify-content: left;
   }
   .footer__social-networks {
     order: 0;
+    margin-top: 10px;
+    gap: 10px;
+  }
+  .footer__social-network {
+    margin: 0;
   }
 }
