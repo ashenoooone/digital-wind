@@ -10,6 +10,19 @@ class Api {
       : Promise.reject('Error ' + res.status + res.statusText);
   }
 
+  register() {
+    fetch(`${this._baseUrl}/register`, {
+      headers: this._headers,
+      body: JSON.stringify({
+        email: 'string',
+        name: 'string',
+        surname: 'string',
+        password: 'string',
+        phone: 'string',
+      }),
+    });
+  }
+
   getCourses() {
     return fetch(`${this._baseUrl}/getAllCourse?limit=100`, {
       method: 'GET',
