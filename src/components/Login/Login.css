@@ -40,6 +40,11 @@
   background: #2f80ed;
   border-radius: 58px;
   margin-right: 48px;
+  transition: all 0.2 ease;
+}
+.login__submit-button:hover {
+  background: rgba(47, 128, 237, 0.1);
+  color: #2f80ed;
 }
 .login__registration-button {
   font-style: normal;

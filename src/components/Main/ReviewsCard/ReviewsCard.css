@@ -56,3 +56,16 @@
   color: #808d9e;
   margin: 8px 0 0;
 }
+
+@media screen and (max-width: 767px) {
+  .review__card-title {
+    font-size: 18px;
+    line-height: 27px;
+    margin: 16px 0 8px;
+  }
+
+  .review__card-paragraph {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
