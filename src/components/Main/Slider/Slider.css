@@ -9,6 +9,7 @@
 .slider__info {
   padding: 120px 240px 0;
   margin: 0 auto;
+  box-sizing: border-box;
   width: 100%;
   max-width: 1920px;
 }
@@ -75,5 +76,33 @@
     font-size: 21px;
   }
 }
-@media screen and (max-width: 1279px) {
+
+@media screen and (max-width: 767px) {
+  .slider {
+    padding: 108px 0 32px;
+  }
+
+  .slider__info {
+    padding: 0 20px;
+  }
+
+  .slider__title {
+    font-size: 25px;
+    line-height: 33px;
+    margin: 0 0 12px;
+  }
+
+  .slider__subtitle {
+    font-size: 13px;
+    line-height: 19px;
+    margin: 0 0 24px;
+  }
+
+  .slider__cards {
+    padding: 32px 0;
+  }
+
+  .slider__row {
+    column-gap: 20px;
+  }
 }

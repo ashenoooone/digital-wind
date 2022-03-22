@@ -43,3 +43,27 @@
     padding: 35px 20px 40px;
   }
 }
+
+@media screen and (max-width: 767px) {
+  .reviews {
+    padding: 48px 0 40px;
+  }
+
+  .reviews__card {
+    padding: 12px 20px;
+  }
+
+  .reviews__title {
+    margin: 0;
+    padding-left: 20px;
+    font-size: 28px;
+    line-height: 42px;
+  }
+
+  .reviews__row {
+    padding: 16px 0 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    row-gap: 24px;
+  }
+}
