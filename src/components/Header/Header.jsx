@@ -15,6 +15,8 @@ const Header = () => {
     const scrollHandler = () => {
       if (window.scrollY >= 113 && window.scrollY > pos) {
         setHeaderVisibility(false);
+        setIsMenuActive(false);
+        setBurgerActive(false);
         setPos(window.scrollY);
       } else {
         setHeaderVisibility(true);

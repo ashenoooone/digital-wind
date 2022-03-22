@@ -6,16 +6,14 @@
   box-sizing: border-box;
   background-color: white;
   top: 32px;
-  visibility: hidden;
-  opacity: 0;
   display: flex;
   transition: all 0.5s linear;
+  right: -500px;
   flex-direction: column;
   justify-content: space-between;
 }
 .menu_active {
-  opacity: 1;
-  visibility: visible;
+  right: -20px;
 }
 .menu__enter-button {
   padding: 12px 40px;
