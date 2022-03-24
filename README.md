@@ -10,3 +10,6 @@
 
 ## Стек: 
 React, JS, html, css
+
+## gh-pages
+https://ashenoooone.github.io/digital-wind/
