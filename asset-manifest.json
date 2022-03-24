@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/digital-wind/static/css/main.a09b4d27.css",
-    "main.js": "/digital-wind/static/js/main.6b19b3c8.js",
+    "main.css": "/digital-wind/static/css/main.d1ef1466.css",
+    "main.js": "/digital-wind/static/js/main.f97002e5.js",
     "static/js/787.06a814a8.chunk.js": "/digital-wind/static/js/787.06a814a8.chunk.js",
     "static/media/Rubik-Regular.ttf": "/digital-wind/static/media/Rubik-Regular.da39336cfcac7980f2f1.ttf",
     "static/media/Rubik-Medium.ttf": "/digital-wind/static/media/Rubik-Medium.5bd2b2c6ad8019567605.ttf",
@@ -10,7 +10,9 @@
     "static/media/Rubik-Medium.woff2": "/digital-wind/static/media/Rubik-Medium.df3d806d410e7d371381.woff2",
     "static/media/Rubik-SemiBold.woff2": "/digital-wind/static/media/Rubik-SemiBold.ea9eaa92326d266cd7f6.woff2",
     "static/media/RubikMonoOne-Regular.ttf": "/digital-wind/static/media/RubikMonoOne-Regular.bca8f5015b00e4514972.ttf",
+    "static/media/courseImage.png": "/digital-wind/static/media/courseImage.c4d94ca0de7e69251008.png",
     "static/media/RubikMonoOne-Regular.woff2": "/digital-wind/static/media/RubikMonoOne-Regular.f17c8c032af1b7b336d5.woff2",
+    "static/media/courseZnak.svg": "/digital-wind/static/media/courseZnak.e4390e9c11f72c656afb402381269c20.svg",
     "static/media/Rubik-Medium.woff": "/digital-wind/static/media/Rubik-Medium.b58a9c4098864b921367.woff",
     "static/media/Rubik-SemiBold.woff": "/digital-wind/static/media/Rubik-SemiBold.c00932e1fff84cdbaa53.woff",
     "static/media/Rubik-Regular.woff": "/digital-wind/static/media/Rubik-Regular.bb1eaabc55d2fab56c2f.woff",
@@ -36,13 +38,14 @@
     "static/media/star.svg": "/digital-wind/static/media/star.50f3fc1a1d1f4eaebc6acf6dec37ed35.svg",
     "static/media/tg-logo-black.svg": "/digital-wind/static/media/tg-logo-black.5eca023e62790279b4dc61531cf79e34.svg",
     "static/media/tg-logo.svg": "/digital-wind/static/media/tg-logo.17aec097ed04f7ca77d1b636a44871cf.svg",
+    "static/media/courseButtonUp.svg": "/digital-wind/static/media/courseButtonUp.401d56bcde21e6bf545c7adc7b9136d6.svg",
     "static/media/burder-header.svg": "/digital-wind/static/media/burder-header.4a8fb02c5471b0a45a16014d53350dcb.svg",
-    "main.a09b4d27.css.map": "/digital-wind/static/css/main.a09b4d27.css.map",
-    "main.6b19b3c8.js.map": "/digital-wind/static/js/main.6b19b3c8.js.map",
+    "main.d1ef1466.css.map": "/digital-wind/static/css/main.d1ef1466.css.map",
+    "main.f97002e5.js.map": "/digital-wind/static/js/main.f97002e5.js.map",
     "787.06a814a8.chunk.js.map": "/digital-wind/static/js/787.06a814a8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a09b4d27.css",
-    "static/js/main.6b19b3c8.js"
+    "static/css/main.d1ef1466.css",
+    "static/js/main.f97002e5.js"
   ]
 }
