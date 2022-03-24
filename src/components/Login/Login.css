@@ -1,7 +1,7 @@
 .login {
   padding: 213px 0 360px;
   display: flex;
-  font-family: "Rubik";
+  font-family: 'Rubik';
   margin: 0 auto;
   flex: 1;
 }
@@ -42,6 +42,11 @@
   margin-right: 48px;
   transition: all 0.2 ease;
 }
+.login__submit-button-inactive {
+  background: #f3f3f3;
+  color: #b6b6b6;
+  pointer-events: none;
+}
 .login__submit-button:hover {
   background: rgba(47, 128, 237, 0.1);
   color: #2f80ed;
@@ -67,6 +72,7 @@
 .login__buttons {
   display: flex;
 }
+
 @media screen and (max-width: 1279px) {
   .login {
     padding: 163px 0 180px;

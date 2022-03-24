@@ -64,6 +64,26 @@
 .registration__image {
 }
 
+.error-message {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #ff3636;
+  max-width: 320px;
+  margin-bottom: 2px;
+}
+
+.registration__submit-button-inactive {
+  background: #f3f3f3;
+  color: #b6b6b6;
+  pointer-events: none;
+}
+
+.registration__input-error {
+  outline: 1px solid #ffa4a4;
+  color: #ff3636;
+}
+
 @media screen and (max-width: 1024px) {
   .registration {
     padding: 124px 0 82px;

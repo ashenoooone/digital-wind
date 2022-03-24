@@ -10,15 +10,17 @@ class Api {
       : Promise.reject('Error ' + res.status + res.statusText);
   }
 
-  register() {
+  register(data) {
     fetch(`${this._baseUrl}/register`, {
-      headers: this._headers,
+      headers: this.headers,
+      method: 'POST',
       body: JSON.stringify({
-        email: 'string',
-        name: 'string',
-        surname: 'string',
-        password: 'string',
-        phone: 'string',
+        email: data.email,
+        name: data.name,
+        surname: data.surname,
+        password: data.password,
+        phone: data.phone,
+        ip: data.ip,
       }),
     });
   }
