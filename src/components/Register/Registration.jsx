@@ -9,13 +9,11 @@ import { isValidPhoneNumber } from 'react-phone-number-input';
 const Registration = () => {
   const onSubmit = (data) => {
     api
-      .register({ ...data, name: '', surname: '', ip: '' })
-      .then((res) => {
-        reset();
-      })
+      .register({ ...data, name: 'string', surname: 'string' })
+      .then((res) => reset())
       .catch((er) => {
-        reset();
         console.error(er);
+        reset();
       });
   };
   const {
@@ -74,6 +72,7 @@ const Registration = () => {
           <input
             className='registration__input'
             placeholder='Пароль'
+            type='password'
             {...register('password', {
               minLength: {
                 value: 3,

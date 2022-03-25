@@ -3,24 +3,56 @@ import { Link } from 'react-router-dom';
 import './Login.css';
 import loginImage from '../../images/login.svg';
 import { useForm } from 'react-hook-form';
+import api from '../../utils/Api';
+import { useDispatch } from 'react-redux';
+import { setUser } from '../store/slices/userSlice';
+
 const Login = () => {
-  const onSubmit = () => {};
+  const dispatch = useDispatch();
+  const onSubmit = (data) => {
+    api
+      .login(data)
+      .then((res) => {
+        dispatch(
+          setUser({
+            email: res.email,
+            name: res.name,
+            surname: res.surname,
+            token: res.token,
+            id: res.id,
+          })
+        );
+        reset();
+      })
+      .catch((er) => {
+        console.error(er);
+        reset();
+      });
+  };
   const {
     register,
-    formState: { errors },
+    formState: { errors, isValid },
     handleSubmit,
     reset,
-  } = useForm();
+  } = useForm({
+    mode: 'onChange',
+  });
   return (
     <section className='login'>
       <div className='login__container'>
         <h1 className='login__title'>Войти</h1>
-        <form className='login__form' onSubmit={handleSubmit()}>
-          <input className='login__input' type='email' placeholder='Почта' />
+        <form className='login__form' onSubmit={handleSubmit(onSubmit)}>
+          <input
+            className='login__input'
+            type='email'
+            placeholder='Почта'
+            {...register('email')}
+          />
           <input
             className='login__input'
             type='password'
             placeholder='Пароль'
+            {...register('password')}
           />
           <div className='login__buttons'>
             <input

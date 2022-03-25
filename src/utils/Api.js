@@ -10,9 +10,20 @@ class Api {
       : Promise.reject('Error ' + res.status + res.statusText);
   }
 
+  login(data) {
+    fetch(`${this._baseUrl}/login`, {
+      method: 'POST',
+      headers: this._header,
+      body: JSON.stringify({
+        email: data.email,
+        password: data.password,
+      }),
+    }).then((res) => this._getCheckData(res));
+  }
+
   register(data) {
     fetch(`${this._baseUrl}/register`, {
-      headers: this.headers,
+      headers: this._header,
       method: 'POST',
       body: JSON.stringify({
         email: data.email,
@@ -20,15 +31,14 @@ class Api {
         surname: data.surname,
         password: data.password,
         phone: data.phone,
-        ip: data.ip,
       }),
-    });
+    }).then((res) => this._getCheckData(res));
   }
 
   getCourses() {
     return fetch(`${this._baseUrl}/getAllCourse?limit=100`, {
       method: 'GET',
-      headers: this._headers,
+      headers: this._header,
     }).then((res) => this._getCheckData(res));
   }
 }

@@ -7,13 +7,13 @@ const Menu = (props) => {
   return (
     <div className={props.isActive ? 'menu menu_active' : 'menu'}>
       <div className='menu__top'>
-        <Link to='error' className='menu__enter-button'>
+        <Link to='/login' className='menu__enter-button'>
           Войти
         </Link>
-        <Link to='error' className='menu__link'>
+        <Link to='/info' className='menu__link'>
           О компании
         </Link>
-        <Link to='error' className='menu__link'>
+        <Link to='/courses' className='menu__link'>
           Курсы
         </Link>
       </div>
