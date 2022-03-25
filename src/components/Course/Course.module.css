@@ -74,8 +74,8 @@
 }
 
 .card__img {
-  width: 420px;
-  height: 420px;
+  max-width: 420px;
+  max-height: 420px;
   padding-right: 100px;
 }
 
@@ -267,4 +267,327 @@
 
 .theory__course-button_rotate {
   transform: rotate(0deg);
+}
+
+@media screen and (max-width: 1600px) {
+  .content {
+    padding: 173px 180px 0;
+  }
+}
+
+@media screen and (max-width: 1480px) {
+  .content {
+    padding: 173px 120px 0;
+  }
+
+  .card__container {
+    padding: 100px 50px;
+  }
+
+  .card__img {
+    padding-right: 50px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .content {
+    padding: 123px 80px 0;
+  }
+
+  .card__container {
+    padding: 65px 30px;
+  }
+
+  .card__img {
+    padding-right: 30px;
+  }
+
+  .card__info {
+    column-gap: 30px;
+  }
+
+  .card__title {
+    font-size: 33px;
+  }
+
+  .card__text {
+    font-size: 16px;
+    margin: 24px 0 53px;
+  }
+
+  .card__duration-title {
+    font-size: 19px;
+  }
+
+  .card__duration-text {
+    font-size: 14px;
+  }
+
+  .card__star {
+    margin: 0 5px 0 0;
+  }
+
+  .course {
+    padding: 40px 30px;
+  }
+
+  .theory {
+    padding: 0 0 60px;
+  }
+
+  .course__title {
+    font-size: 33px;
+  }
+
+  .course__container {
+    column-gap: 40px;
+  }
+
+  .course__item {
+    column-gap: 16px;
+  }
+
+  .course__content-title {
+    font-size: 19px;
+  }
+
+  .course__content-text {
+    font-size: 14px;
+  }
+
+  .theory__title {
+    font-size: 33px;
+  }
+
+  .theory__course-title {
+    font-size: 19px;
+  }
+
+  .theory__number-blue {
+    font-size: 16px;
+  }
+
+  .theory__module {
+    font-size: 16px;
+    margin: 0 30px 0 0;
+  }
+
+  .theory__video {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 1025px) {
+  .content {
+    padding: 123px 40px 0;
+  }
+
+  .card__container {
+    padding: 30px;
+  }
+
+  .card__title {
+    font-size: 24px;
+  }
+
+  .card__text {
+    font-size: 13px;
+    margin: 20px 0 30px;
+  }
+
+  .card__img {
+    width: 315px;
+    height: 288px;
+  }
+
+  .card__duration-title {
+    font-size: 14px;
+    margin: 0;
+  }
+
+  .card__duration-text {
+    font-size: 13px;
+  }
+
+  .course {
+    padding: 30px 20px;
+  }
+
+  .course__item {
+    column-gap: 8px;
+  }
+
+  .course__title {
+    font-size: 24px;
+    margin: 0 0 8px;
+  }
+
+  .course__content-title {
+    font-size: 14px;
+  }
+
+  .course__content-text {
+    font-size: 12px;
+  }
+
+  .course__img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .theory__title {
+    font-size: 24px;
+  }
+
+  .theory__content {
+    padding: 16px 0;
+  }
+
+  .theory__module,
+  .theory__video,
+  .theory__number-blue {
+    font-size: 14px;
+  }
+
+  .theory__course-info {
+    padding: 16px 20px;
+  }
+
+  .theory__course-title {
+    font-size: 14px;
+  }
+
+  .theory__course-button {
+    width: 23px;
+    height: 23px;
+  }
+
+  .card__star {
+    width: 22px;
+    height: 22px;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .content {
+    padding: 123px 0 40px;
+  }
+
+  .card {
+    flex-direction: column;
+    border-radius: 0;
+  }
+
+  .card__img {
+    order: -1;
+    padding: 24px 0 0;
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 0 20px;
+  }
+
+  .card__container {
+    padding: 20px;
+  }
+
+  .card__title {
+    font-size: 28px;
+    line-height: 33px;
+  }
+
+  .card__text {
+    margin: 12px 0 20px;
+    font-size: 14px;
+    line-height: 150%;
+  }
+
+  .card__info {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+
+  .card__star {
+    width: 32px;
+    height: 32px;
+  }
+
+  .card__duration-title {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .card__duration-text {
+    font-size: 14px;
+    line-height: 150%;
+  }
+
+  .course {
+    padding: 40px 20px;
+  }
+
+  .course__title {
+    font-size: 28px;
+    line-height: 33px;
+    margin: 0 0 32px;
+  }
+
+  .course__img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .course__container {
+    flex-direction: column;
+    row-gap: 32px;
+  }
+
+  .course__item {
+    flex-direction: column;
+    row-gap: 16px;
+  }
+
+  .course__content-title {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .course__content-text {
+    font-size: 14px;
+    line-height: 150%;
+  }
+
+  .theory {
+    padding: 0 20px 0;
+  }
+
+  .theory__title {
+    font-size: 28px;
+    line-height: 33px;
+  }
+
+  .theory__module,
+  .theory__video,
+  .theory__number-blue {
+    font-size: 24px;
+    line-height: 28px;
+    margin: 0;
+  }
+
+  .theory__container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .theory__content {
+    flex-direction: column;
+  }
+
+  .theory__course {
+    padding: 32px 0 0;
+  }
+
+  .theory__course-title {
+    font-size: 18px;
+    line-height: 21px;
+  }
 }
