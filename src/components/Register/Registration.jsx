@@ -5,12 +5,27 @@ import './Registration.css';
 import { useForm } from 'react-hook-form';
 import api from '../../utils/Api';
 import { isValidPhoneNumber } from 'react-phone-number-input';
+import { useDispatch } from 'react-redux';
+import { setUser } from '../store/slices/userSlice';
 
 const Registration = () => {
+  const dispatch = useDispatch();
+
   const onSubmit = (data) => {
     api
       .register({ ...data, name: 'string', surname: 'string' })
-      .then((res) => reset())
+      .then((res) => {
+        dispatch(
+          setUser({
+            email: res.email,
+            name: res.name,
+            surname: res.surname,
+            token: res.token,
+            id: res.id,
+          })
+        );
+        reset();
+      })
       .catch((er) => {
         console.error(er);
         reset();

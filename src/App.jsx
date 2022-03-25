@@ -9,10 +9,7 @@ import Login from './components/Login/Login';
 import Courses from './components/Courses/Courses';
 import Profile from './components/Profile/Profile';
 import Course from './components/Course/Course';
-import userSlice from './components/store/slices/userSlice';
 function App() {
-  console.log(userSlice);
-  console.log(1);
   return (
     <Routes>
       <Route path='/' element={<Layout />}>
