@@ -1,0 +1,133 @@
+.content {
+  max-width: 1920px;
+  padding: 173px 350px 80px;
+  box-sizing: border-box;
+}
+
+.course__title {
+  font-family: "Rubik", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #2c415d;
+  margin: 0 0 40px;
+}
+
+.course__content-title {
+  font-family: "Rubik", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: rgba(44, 65, 93, 0.4);
+}
+
+.course__acordion-title {
+  font-family: "Rubik", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #2c415d;
+}
+
+.course__content-number {
+  font-family: "Rubik", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: right;
+  color: #2c415d;
+}
+
+.course__container {
+  padding: 32px 40px;
+}
+
+.course__items {
+  display: grid;
+  max-width: 1220px;
+  width: 100%;
+  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+  gap: 32px 44px;
+}
+
+.course__item {
+  background: #fbfbfb;
+  border: 1px solid #dbdbdb;
+  box-sizing: border-box;
+  border-radius: 13px;
+  height: 172px;
+}
+
+.height {
+  height: auto;
+}
+
+.course__content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.course__acordion {
+  display: flex;
+}
+
+.course__acordion-img {
+  padding-right: 12px;
+}
+
+.course__info {
+  display: none;
+}
+
+.course__info-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 16px;
+  border: 1px solid #dbdbdb;
+  box-sizing: border-box;
+  border-radius: 5px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.course__info-img {
+  width: 8px;
+  height: 8px;
+  background-color: #dbdbdb;
+  border-radius: 100%;
+  margin: auto 0;
+}
+
+.course__info_active {
+  display: flex;
+  row-gap: 12px;
+  flex-direction: column;
+  transition: all 0.5s ease;
+  max-height: 100vh;
+}
+
+.course__info-title {
+  font-family: "Rubik", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #2c415d;
+  margin: 0;
+}
+
+@media screen and (max-width: 1441px) {
+  .content {
+    padding: 120px 200px 60px;
+  }
+}
+
+@media screen and (max-width: 1281px) {
+  .content {
+    padding: 120px 50px 60px;
+  }
+}
