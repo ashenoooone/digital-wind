@@ -70,7 +70,6 @@ const CourseTheory = (props) => {
         }`}
       >
         {api.map((item) => {
-          console.log(item);
           return (
             <>
               <h2 className={Style["theory__list-title"]}>{item.title}</h2>
