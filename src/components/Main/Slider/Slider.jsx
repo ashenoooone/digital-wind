@@ -1,8 +1,8 @@
-import React from 'react';
-import cardImgFirst from '../../../images/card2.jpg';
-import Card from '../Card/Card';
-import './Slider.css';
-import api from '../../../utils/Api';
+import React from "react";
+import cardImgFirst from "../../../images/card2.jpg";
+import Card from "../Card/Card";
+import "./Slider.css";
+import api from "../../../utils/Api";
 
 const Slider = () => {
   const [allCards, setAllCards] = React.useState([]);
@@ -12,17 +12,17 @@ const Slider = () => {
     });
   }, []);
   return (
-    <section className='slider'>
-      <div className='slider__info'>
-        <h1 className='slider__title'>
+    <section className="slider">
+      <div className="slider__info">
+        <h1 className="slider__title">
           Justudy — ваш прямой путь в IT-профессии
         </h1>
-        <p className='slider__subtitle'>
+        <p className="slider__subtitle">
           Выберите интересующий курс и начинайте осваивать новую профессию!
         </p>
       </div>
-      <div className='slider__cards'>
-        <div className='slider__row'>
+      <div className="slider__cards">
+        <div className="slider__row">
           {allCards.map((card) => {
             return (
               <Card
