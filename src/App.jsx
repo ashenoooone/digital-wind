@@ -51,6 +51,7 @@ function App() {
           }
         />
         <Route path='course' element={<Course />} />
+        <Route path='theory' element={<Theory />} />
       </Route>
     </Routes>
   );
