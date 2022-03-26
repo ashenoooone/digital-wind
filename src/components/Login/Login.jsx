@@ -23,7 +23,7 @@ const Login = () => {
             id: res.id,
           })
         );
-        navigate('/profile');
+        navigate('/profile', { replace: true });
         reset();
       })
       .catch((er) => {

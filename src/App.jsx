@@ -11,6 +11,7 @@ import Profile from './components/Profile/Profile';
 import Course from './components/Course/Course';
 import RequierAuth from './hoc/RequierAuth';
 import CourseInner from './components/CourseInner/CourseInner';
+import IsAlreadyAuth from './hoc/IsAlreadyAuth';
 function App() {
   return (
     <Routes>
@@ -18,8 +19,22 @@ function App() {
         <Route path='digital-wind' element={<Main />} />
         <Route path='*' element={<NotFoundPage />} />
         <Route path='info' element={<AboutCreators />} />
-        <Route path='register' element={<Registration />} />
-        <Route path='login' element={<Login />} />
+        <Route
+          path='register'
+          element={
+            <IsAlreadyAuth>
+              <Registration />
+            </IsAlreadyAuth>
+          }
+        />
+        <Route
+          path='/login'
+          element={
+            <IsAlreadyAuth>
+              <Login />
+            </IsAlreadyAuth>
+          }
+        />
         <Route path='courses' element={<Courses />} />
         <Route
           path='course-inner'

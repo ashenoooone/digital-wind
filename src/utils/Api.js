@@ -35,6 +35,12 @@ class Api {
     }).then((res) => this._getCheckData(res));
   }
 
+  getUserCourses = (token) => {
+    return fetch(`${this._baseUrl}/user/profile?token=${token}`, {
+      method: 'GET',
+    }).then((res) => this._getCheckData(res));
+  };
+
   getCourses() {
     return fetch(`${this._baseUrl}/course/getAllCourse?limit=100`, {
       method: 'GET',

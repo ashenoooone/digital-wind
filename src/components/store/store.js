@@ -11,9 +11,11 @@ import {
   REGISTER,
 } from 'redux-persist';
 import storage from 'redux-persist/lib/storage';
+import menuReducer from './slices/menuSlice';
 
 const rootReducer = combineReducers({
   user: userReducer,
+  menu: menuReducer,
 });
 
 const persistConfig = {

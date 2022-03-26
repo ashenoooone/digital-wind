@@ -13,7 +13,7 @@ const Registration = () => {
 
   const onSubmit = (data) => {
     api
-      .register({ ...data, name: 'string', surname: 'string' })
+      .register(data)
       .then((res) => {
         dispatch(
           setUser({
@@ -45,6 +45,44 @@ const Registration = () => {
       <div className='registration__container'>
         <h1 className='registration__title'>Регистрация</h1>
         <form className='registration__form' onSubmit={handleSubmit(onSubmit)}>
+          <span className='error-message'>{errors?.name?.message}</span>
+          <input
+            type='text'
+            className={`registration__input ${
+              errors?.name && 'registration__input-error'
+            }`}
+            placeholder='Имя'
+            {...register('name', {
+              required: 'Это поле обязательно к заполнению',
+              minLength: {
+                value: 2,
+                message: 'Минимальная длина имени 2 символа',
+              },
+              maxLength: {
+                value: 32,
+                message: 'Максимальная длина имени 32 символа',
+              },
+            })}
+          />
+          <span className='error-message'>{errors?.surname?.message}</span>
+          <input
+            type='text'
+            className={`registration__input ${
+              errors?.surname && 'registration__input-error'
+            }`}
+            placeholder='Фамилия'
+            {...register('surname', {
+              required: 'Это поле обязательно к заполнению',
+              minLength: {
+                value: 2,
+                message: 'Минимальная длина фамилии 2 символа',
+              },
+              maxLength: {
+                value: 32,
+                message: 'Максимальная длина фамилии 32 символа',
+              },
+            })}
+          />
           <span className='error-message'>{errors?.email?.message}</span>
           <input
             className={`registration__input && ${
@@ -73,7 +111,6 @@ const Registration = () => {
             placeholder='Телефон'
             type='tel'
             {...register('phone', {
-              required: 'Это поле обязательно к заполнению',
               validate: {
                 phone: (value) => {
                   return (
@@ -85,10 +122,13 @@ const Registration = () => {
           />
           <span className='error-message'>{errors?.password?.message}</span>
           <input
-            className='registration__input'
+            className={`registration__input ${
+              errors?.password && 'registration__input-error'
+            }`}
             placeholder='Пароль'
             type='password'
             {...register('password', {
+              required: 'Это поле обязательно к заполнению',
               minLength: {
                 value: 3,
                 message: 'Минимальная длина пароля 3 символа',

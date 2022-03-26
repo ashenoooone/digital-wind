@@ -5,17 +5,25 @@ import './Header.css';
 import { Link } from 'react-router-dom';
 import burger from '../../images/burder-header.svg';
 import Menu from '../Menu/Menu';
+import { useAuth } from '../../hooks/useAuth';
+import avatar from '../../images/empty-avatar.svg';
+import { useMenu } from '../../hooks/useMenu';
+import { useDispatch } from 'react-redux';
+import { toggleMenu } from '../store/slices/menuSlice';
 
 const Header = () => {
   const [headerVisibility, setHeaderVisibility] = React.useState(true);
   const [burgerActive, setBurgerActive] = React.useState(false);
-  const [isMenuActive, setIsMenuActive] = React.useState(false);
+  // const [isMenuActive, setIsMenuActive] = React.useState(false);
   const [pos, setPos] = React.useState(113);
+  const dispatch = useDispatch();
+  const { isAuth, name, surname } = useAuth();
+  const { isMenuActive } = useMenu();
   React.useEffect(() => {
     const scrollHandler = () => {
       if (window.scrollY >= 113 && window.scrollY > pos) {
         setHeaderVisibility(false);
-        setIsMenuActive(false);
+        // setIsMenuActive(false);
         setBurgerActive(false);
         setPos(window.scrollY);
       } else {
@@ -45,22 +53,26 @@ const Header = () => {
         </Link>
       </div>
       <div className='header__buttons header__buttons-desktop'>
-        <Link to='/login' className='header__button'>
-          Войти
-        </Link>
+        {isAuth ? (
+          <Link to='/profile' className='header__profile-container'>
+            <img src={avatar} alt='' className='header__profile-image' />
+            <p className='header__profile-name'>{`${name} ${surname[0]}.`}</p>
+          </Link>
+        ) : (
+          <Link to='/login' className='header__button'>
+            Войти
+          </Link>
+        )}
       </div>
       <div className='header__buttons header__buttons-mobile'>
         <img
           src={burger}
           alt='бургер'
-          className={
-            burgerActive
-              ? 'header__burger header__burger_active'
-              : 'header__burger'
-          }
+          className='header__burger'
           onClick={() => {
             setBurgerActive(!burgerActive);
-            setIsMenuActive(!isMenuActive);
+            dispatch(toggleMenu());
+            // setIsMenuActive(!isMenuActive);
           }}
         />
         <Menu isActive={isMenuActive} />

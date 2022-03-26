@@ -104,12 +104,24 @@
   margin: 0;
 }
 
-.header__burger {
-  transition: all 0.5s ease-in-out;
+.header__profile-container {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
 }
 
-.header__burger_active {
-  transform: rotate(-90deg);
+.header__profile-image {
+  width: 44px;
+  height: 44px;
+  margin-right: 12px;
+}
+
+.header__profile-name {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  color: #2c415d;
+  margin: 0;
 }
 
 @media screen and (max-width: 1800px) {
@@ -127,8 +139,6 @@
 @media screen and (max-width: 1023px) {
   .header__button:last-child {
     margin-left: 20px;
-  }
-  .header__link {
   }
 }
 
