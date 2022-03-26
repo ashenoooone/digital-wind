@@ -1,0 +1,23 @@
+.course-inner {
+  padding: 160px 241px 80px;
+}
+.course-inner__name {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: rgba(44, 65, 93, 0.4);
+  margin: 0;
+}
+.course-inner__title {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 43px;
+  color: #2c415d;
+  margin: 8px 0 32px;
+}
+.course-inner__par {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: #2c415d;
+}

@@ -45,18 +45,11 @@ const Header = () => {
         </Link>
       </div>
       <div className='header__buttons header__buttons-desktop'>
-        {/* <img className='header__button' alt='кнопка' src={navIcon} /> */}
         <Link to='/login' className='header__button'>
           Войти
         </Link>
       </div>
       <div className='header__buttons header__buttons-mobile'>
-        {/* <img
-          className='header__button'
-          alt='кнопка'
-          src={navIcon}
-          style={{ display: 'none' }}
-        /> */}
         <img
           src={burger}
           alt='бургер'

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import './Login.css';
 import loginImage from '../../images/login.svg';
 import { useForm } from 'react-hook-form';
@@ -8,6 +8,7 @@ import { useDispatch } from 'react-redux';
 import { setUser } from '../store/slices/userSlice';
 
 const Login = () => {
+  const navigate = useNavigate();
   const dispatch = useDispatch();
   const onSubmit = (data) => {
     api
@@ -22,11 +23,11 @@ const Login = () => {
             id: res.id,
           })
         );
+        navigate('/profile');
         reset();
       })
       .catch((er) => {
         console.error(er);
-        reset();
       });
   };
   const {
@@ -41,7 +42,11 @@ const Login = () => {
     <section className='login'>
       <div className='login__container'>
         <h1 className='login__title'>Войти</h1>
-        <form className='login__form' onSubmit={handleSubmit(onSubmit)}>
+        <form
+          className='login__form'
+          onSubmit={handleSubmit(onSubmit)}
+          noValidate
+        >
           <input
             className='login__input'
             type='email'

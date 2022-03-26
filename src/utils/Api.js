@@ -11,7 +11,7 @@ class Api {
   }
 
   login(data) {
-    fetch(`${this._baseUrl}/login`, {
+    return fetch(`${this._baseUrl}/auth/login`, {
       method: 'POST',
       headers: this._header,
       body: JSON.stringify({
@@ -22,7 +22,7 @@ class Api {
   }
 
   register(data) {
-    fetch(`${this._baseUrl}/register`, {
+    return fetch(`${this._baseUrl}/auth/register`, {
       headers: this._header,
       method: 'POST',
       body: JSON.stringify({
@@ -36,7 +36,7 @@ class Api {
   }
 
   getCourses() {
-    return fetch(`${this._baseUrl}/getAllCourse?limit=100`, {
+    return fetch(`${this._baseUrl}/course/getAllCourse?limit=100`, {
       method: 'GET',
       headers: this._header,
     }).then((res) => this._getCheckData(res));

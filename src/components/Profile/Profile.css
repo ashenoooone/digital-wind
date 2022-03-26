@@ -1,5 +1,5 @@
 .profile {
-  font-family: "Rubik";
+  font-family: 'Rubik';
   padding: 173px 240px 80px;
 }
 .profile__personal {
@@ -43,76 +43,4 @@
   display: flex;
   flex-direction: column;
   row-gap: 20px;
-}
-
-@media screen and (max-width: 768px) {
-  .profile {
-    padding: 173px 20px 80px;
-  }
-
-  .profile__personal {
-    display: grid;
-    grid-template-columns: 80px 222px;
-    gap: 18px;
-    grid-template-areas:
-      "avatar name"
-      "settings mail";
-  }
-
-  .profile__avatar {
-    grid-area: avatar;
-    margin: 0 auto;
-    width: 80px;
-    height: 80px;
-  }
-
-  .profile__name {
-    grid-area: name;
-    display: flex;
-    align-items: flex-end;
-    margin: 0;
-    font-size: 28px;
-    line-height: 33px;
-  }
-
-  .profile__settings-button {
-    grid-area: settings;
-    margin: 0 auto;
-    width: 40px;
-    height: 40px;
-  }
-
-  .profile__email {
-    grid-area: mail;
-    margin: 0;
-    font-size: 18px;
-    line-height: 21px;
-    display: flex;
-    align-items: center;
-  }
-
-  .profile__courses {
-    flex-direction: column;
-  }
-
-  .profile__button {
-    padding: 12px 40px;
-    background: #2f80ed;
-    border-radius: 58px;
-    color: white;
-    text-decoration: none;
-    border: 0;
-    grid-area: button;
-    box-sizing: border-box;
-    margin: 16px 0 0;
-  }
-
-  .profile__button:hover {
-    background: rgba(47, 128, 237, 0.1);
-    color: #2f80ed;
-  }
-
-  .profile__button:active {
-    outline: 1px solid #367cff;
-  }
 }
