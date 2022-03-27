@@ -12,6 +12,7 @@ import Course from './components/Course/Course';
 import RequierAuth from './hoc/RequierAuth';
 import CourseInner from './components/CourseInner/CourseInner';
 import IsAlreadyAuth from './hoc/IsAlreadyAuth';
+import Theory from './components/Theory/Theory';
 function App() {
   return (
     <Routes>
