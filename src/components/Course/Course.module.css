@@ -228,7 +228,7 @@
 
 .theory_active {
   transition: all 0.5s ease;
-  max-height: 100vh;
+  max-height: min-content;
 }
 
 .theory__list-title {
