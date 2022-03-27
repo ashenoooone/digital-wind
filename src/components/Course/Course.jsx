@@ -1,13 +1,14 @@
 import React from "react";
 import Style from "./Course.module.css";
-import courseButtonUp from "../../images/courseButtonUp.svg";
 import courseImage from "../../images/courseImage.png";
 import courseZnak from "../../images/courseZnak.svg";
 import star from "../../images/star.svg";
 import CourseTheory from "./CourseTheory/CourseTheory";
+import { useLocation } from "react-router-dom";
 
 const Course = () => {
-  const [isAnimate, setAnimate] = React.useState(false);
+  const courseInfo = useLocation().state;
+  console.log(courseInfo);
   const allTheory = [
     { title: "1. Базовый уровень" },
     { title: "2. Продвинутый уровень" },
@@ -18,12 +19,8 @@ const Course = () => {
     <div className={Style["content"]}>
       <div className={Style["card"]}>
         <div className={Style["card__container"]}>
-          <h2 className={Style["card__title"]}>Frontend-разработчик</h2>
-          <p className={Style["card__text"]}>
-            Вы изучите основы HTML, CSS и JavaScript, научитесь создавать сайты
-            и приложения для любых устройств, оптимизировать код и работать с
-            анимацией. Соберёте портфолио и сможете начать карьеру разработчика.
-          </p>
+          <h2 className={Style["card__title"]}>{courseInfo.title}</h2>
+          <p className={Style["card__text"]}>{courseInfo.fullDescription}</p>
           <div className={Style["card__info"]}>
             <div className={Style["card__item"]}>
               <img src={star} alt="звезда" className={Style["card__star"]} />
@@ -32,7 +29,9 @@ const Course = () => {
                   <h2 className={Style["card__duration-title"]}>
                     Длительность
                   </h2>
-                  <p className={Style["card__duration-text"]}>6 месяцев</p>
+                  <p className={Style["card__duration-text"]}>
+                    {courseInfo.duration} месяцев
+                  </p>
                 </div>
               </div>
             </div>
@@ -63,12 +62,10 @@ const Course = () => {
               />
               <div className={Style["course__content"]}>
                 <h2 className={Style["course__content-title"]}>
-                  Новичкам в разработке
+                  {courseInfo.forWhomTitle1}
                 </h2>
                 <p className={Style["course__content-text"]}>
-                  Вы с нуля научитесь верстать сайты на HTML и CSS, создавать
-                  приложения и веб-страницы на JavaScript. Отработаете
-                  полученные знания на практике и соберёте портфолио.
+                  {courseInfo.forWhomDesc1}
                 </p>
               </div>
             </div>
@@ -80,13 +77,10 @@ const Course = () => {
               />
               <div className={Style["course__content"]}>
                 <h2 className={Style["course__content-title"]}>
-                  Начинающим программистам
+                  {courseInfo.forWhomTitle2}
                 </h2>
                 <p className={Style["course__content-text"]}>
-                  Вы расширите круг своих компетенций, изучив синтаксис
-                  JavaScript, CSS на продвинутом уровне. Научитесь настраивать
-                  командный доступ с Git и делать более чистые и качественные
-                  сайты.
+                  {courseInfo.forWhomDesc2}
                 </p>
               </div>
             </div>
@@ -99,7 +93,10 @@ const Course = () => {
           <div className={Style["theory__info"]}>
             <div className={Style["theory__content"]}>
               <p className={Style["theory__module"]}>
-                <span className={Style["theory__number-blue"]}>49</span> модулей
+                <span className={Style["theory__number-blue"]}>
+                  {courseInfo.module.length}
+                </span>{" "}
+                модулей
               </p>
               <p className={Style["theory__video"]}>
                 <span className={Style["theory__number-blue"]}>150</span>{" "}
@@ -112,8 +109,12 @@ const Course = () => {
           </div>
           <div className={Style["theory__all-course"]}>
             <div className={Style["theory__course"]}>
-              {allTheory.map((item) => (
-                <CourseTheory title={item.title} />
+              {courseInfo.module.map((item, id) => (
+                <CourseTheory
+                  key={id}
+                  title={item.levelName}
+                  header={item.header}
+                />
               ))}
             </div>
           </div>

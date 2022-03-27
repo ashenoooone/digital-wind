@@ -228,7 +228,7 @@
 
 .theory_active {
   transition: all 0.5s ease;
-  max-height: 100vh;
+  max-height: min-content;
 }
 
 .theory__list-title {
@@ -262,11 +262,10 @@
 
 .theory__course-button {
   transition: all 0.5s ease-in-out;
-  transform: rotate(90deg);
 }
 
 .theory__course-button_rotate {
-  transform: rotate(0deg);
+  transform: rotate(180deg);
 }
 
 @media screen and (max-width: 1600px) {

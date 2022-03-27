@@ -63,7 +63,7 @@
 }
 
 .height {
-  height: auto;
+  height: min-content;
 }
 
 .course__content {
