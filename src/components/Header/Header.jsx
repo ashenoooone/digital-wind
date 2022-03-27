@@ -14,7 +14,6 @@ import { toggleMenu } from '../store/slices/menuSlice';
 const Header = () => {
   const [headerVisibility, setHeaderVisibility] = React.useState(true);
   const [burgerActive, setBurgerActive] = React.useState(false);
-  // const [isMenuActive, setIsMenuActive] = React.useState(false);
   const [pos, setPos] = React.useState(113);
   const dispatch = useDispatch();
   const { isAuth, name, surname } = useAuth();
@@ -23,7 +22,6 @@ const Header = () => {
     const scrollHandler = () => {
       if (window.scrollY >= 113 && window.scrollY > pos) {
         setHeaderVisibility(false);
-        // setIsMenuActive(false);
         setBurgerActive(false);
         setPos(window.scrollY);
       } else {
@@ -72,7 +70,6 @@ const Header = () => {
           onClick={() => {
             setBurgerActive(!burgerActive);
             dispatch(toggleMenu());
-            // setIsMenuActive(!isMenuActive);
           }}
         />
         <Menu isActive={isMenuActive} />

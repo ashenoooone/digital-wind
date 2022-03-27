@@ -22,6 +22,7 @@ const Registration = () => {
             surname: res.surname,
             token: res.token,
             id: res.id,
+            phone: res.phone,
           })
         );
         reset();
@@ -113,9 +114,9 @@ const Registration = () => {
             {...register('phone', {
               validate: {
                 phone: (value) => {
-                  return (
-                    isValidPhoneNumber(value) || 'Вводите телефон через +7'
-                  );
+                  return value
+                    ? isValidPhoneNumber(value) || 'Вводите телефон через +7'
+                    : true;
                 },
               },
             })}
