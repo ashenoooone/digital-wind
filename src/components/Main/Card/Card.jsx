@@ -1,10 +1,14 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate, useLocation } from "react-router-dom";
 import Style from "./Card.module.css";
+import api from "../../../utils/Api";
 
 const Card = (props) => {
+  const navigate = useNavigate();
+  const goCourse = () =>
+    api.getCourse(props.id).then((res) => navigate("/course", { state: res }));
   return (
-    <div className={Style["slider__card"]}>
+    <div key={props.id} className={Style["slider__card"]}>
       <div className={Style["slider__card-container"]}>
         <h2 className={Style["slider__card-title"]}>{props.title}</h2>
         <p className={Style["slider__card-description"]}>{props.description}</p>
@@ -12,9 +16,9 @@ const Card = (props) => {
           <p className={Style["slider__card-time"]}>
             Длительность: {props.time} мес.
           </p>
-          <Link to="/course" className={Style["slider__about_button"]}>
+          <button className={Style["slider__about_button"]} onClick={goCourse}>
             Подробнее о курсе
-          </Link>
+          </button>
         </div>
       </div>
       <img

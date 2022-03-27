@@ -27,6 +27,7 @@ const Slider = () => {
             return (
               <Card
                 key={card.id}
+                id={card.id}
                 title={card.title}
                 description={card.description}
                 time={card.duration}
