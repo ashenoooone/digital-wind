@@ -10,7 +10,6 @@ const Course = () => {
   const courseInfo = useLocation().state;
   const navigate = useNavigate();
   const goToTaskPage = () => navigate("/theory", { state: courseInfo.modules });
-  console.log(courseInfo);
   return (
     <div className={Style["content"]}>
       <div className={Style["card"]}>

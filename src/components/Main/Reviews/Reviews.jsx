@@ -34,7 +34,7 @@ const Reviews = () => {
           title="По итогам курса полученные знания я сразу смог применять в работе"
         />
       </div>
-      <Link to="/theory" className="review__link">
+      <Link to="*" className="review__link">
         Все отзывы
       </Link>
     </section>
