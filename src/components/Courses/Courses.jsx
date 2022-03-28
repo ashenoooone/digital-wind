@@ -21,6 +21,7 @@ const Courses = () => {
           return (
             <Card
               key={item.id}
+              id={item.id}
               description={item.description}
               time={item.duration}
               img={cardImgFirst}
