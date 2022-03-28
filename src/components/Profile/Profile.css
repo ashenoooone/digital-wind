@@ -109,3 +109,10 @@
 .profile__button:active {
   outline: 1px solid #367cff;
 }
+.empty-courses {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.empty-courses__image {
+}

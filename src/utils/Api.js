@@ -7,12 +7,12 @@ class Api {
   _getCheckData(res) {
     return res.ok
       ? res.json()
-      : Promise.reject("Error " + res.status + res.statusText);
+      : Promise.reject('Error ' + res.status + res.statusText);
   }
 
   login(data) {
     return fetch(`${this._baseUrl}/auth/login`, {
-      method: "POST",
+      method: 'POST',
       headers: this._header,
       body: JSON.stringify({
         email: data.email,
@@ -24,7 +24,7 @@ class Api {
   register(data) {
     return fetch(`${this._baseUrl}/auth/register`, {
       headers: this._header,
-      method: "POST",
+      method: 'POST',
       body: JSON.stringify({
         email: data.email,
         name: data.name,
@@ -37,28 +37,42 @@ class Api {
 
   getUserCourses = (token) => {
     return fetch(`${this._baseUrl}/user/profile?token=${token}`, {
-      method: "GET",
+      method: 'GET',
     }).then((res) => this._getCheckData(res));
   };
 
   getCourses() {
     return fetch(`${this._baseUrl}/course/getAllCourse?limit=100`, {
-      method: "GET",
+      method: 'GET',
       headers: this._header,
     }).then((res) => this._getCheckData(res));
   }
 
+  updateProfile(data) {
+    return fetch(`${this._baseUrl}/user/profile`, {
+      method: 'PATCH',
+      headers: this._header,
+      body: JSON.stringify({
+        email: data.email,
+        name: data.name,
+        phone: data.phone,
+        surname: data.surname,
+        token: data.token,
+      }),
+    });
+  }
+
   getCourse(id) {
     return fetch(`${this._baseUrl}/course/getCourse?id=${id}`, {
-      method: "GET",
+      method: 'GET',
       headers: this._header,
     }).then((res) => this._getCheckData(res));
   }
 }
 
 const api = new Api({
-  baseUrl: "http://20.124.132.2:8080/v1",
-  headers: { "Content-Type": "application/json" },
+  baseUrl: 'http://20.124.132.2:8080/v1',
+  headers: { 'Content-Type': 'application/json' },
 });
 
 export default api;

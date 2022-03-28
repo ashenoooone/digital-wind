@@ -13,6 +13,8 @@ import { useNavigate } from 'react-router-dom';
 import api from '../../utils/Api';
 import { useForm } from 'react-hook-form';
 import { isValidPhoneNumber } from 'react-phone-number-input';
+import { setUser } from '../store/slices/userSlice';
+import empty_courses from '../../images/empty-courses.svg';
 
 const Profile = () => {
   const navigate = useNavigate();
@@ -29,8 +31,30 @@ const Profile = () => {
     dispatch(removeUser());
     navigate('/login');
   };
-
-  const onSubmit = () => {};
+  const onSubmit = (data) => {
+    const req = {
+      name: data.namesurname.split(' ')[0],
+      surname: data.namesurname.split(' ')[1],
+      email: data.email,
+      phone: errors.phone ? phone : data.phone,
+      token: token,
+    };
+    api
+      .updateProfile(req)
+      .then((res) => {
+        dispatch(
+          setUser({
+            name: req.name,
+            surname: req.surname,
+            email: req.email,
+            phone: req.phone,
+            token: token,
+          })
+        );
+        setIsSettingsActive(false);
+      })
+      .catch((er) => alert(er));
+  };
 
   React.useEffect(() => {
     api.getUserCourses(token).then((res) => {
@@ -81,6 +105,17 @@ const Profile = () => {
                 errors?.namesurname && 'profile__input-error'
               }`}
               {...register('namesurname', {
+                validate: {
+                  noSpaceStart: (value) =>
+                    /^(?! )/g.test(value) ||
+                    'Строка не может начинаться с пробела',
+                  noSpaceStart: (value) =>
+                    /(?<! )$/g.test(value) ||
+                    'В конце строки не должно быть лишних пробелов',
+                  twoWords: (value) =>
+                    /^[^ ]+(?= +[^ ]+$)/g.test(value) ||
+                    'В строке должно быть два слова: имя и фамилия',
+                },
                 required: 'Это поле обязательно к заполнению',
                 minLength: {
                   value: 5,
@@ -162,17 +197,30 @@ const Profile = () => {
       <div className='profile__courses'>
         <div className='profile__courses-current'>
           <h2 className='profile__courses-title'>Текущий курс</h2>
-          {courses.map(({ title, description, duration, id }) => {
-            return (
-              <Card
-                key={id}
-                title={title}
-                description={description}
-                duration={duration}
-                img={cardImgFirst}
+          {courses.length ? (
+            courses.map(({ title, description, duration, id }) => {
+              return (
+                <Card
+                  key={id}
+                  title={title}
+                  description={description}
+                  duration={duration}
+                  img={cardImgFirst}
+                />
+              );
+            })
+          ) : (
+            <div className='empty-courses'>
+              <img
+                src={empty_courses}
+                alt=''
+                className='empty-courses__image'
               />
-            );
-          })}
+              <Link to='/courses' className='button empty-courses__link'>
+                Начать осваивать новую профессию
+              </Link>
+            </div>
+          )}
         </div>
       </div>
     </section>
