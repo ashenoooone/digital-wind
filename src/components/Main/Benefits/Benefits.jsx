@@ -46,7 +46,7 @@ function Benefits(props) {
               </p>
             </li>
           </ul>
-          <Link to="error" className="benefits__button">
+          <Link to="/courses" className="benefits__button">
             Все курсы
           </Link>
         </div>
