@@ -54,6 +54,16 @@ class Api {
       headers: this._header,
     }).then((res) => this._getCheckData(res));
   }
+
+  joinCourse(courseId, id) {
+    return fetch(
+      `${this._baseUrl}/user/joinCourse?course_id=${courseId}&token=${id}`,
+      {
+        method: "GET",
+        headers: this._header,
+      }
+    ).then((res) => this._getCheckData(res));
+  }
 }
 
 const api = new Api({
