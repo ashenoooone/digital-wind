@@ -15,7 +15,7 @@ const Course = () => {
   const goToTaskPage = () =>
     api
       .joinCourse(courseInfo.id, token)
-      .then((res) => navigate("/theory", { state: courseInfo.modules }));
+      .then(() => navigate("/theory", { state: courseInfo.modules }));
   return (
     <div className={Style["content"]}>
       <div className={Style["card"]}>

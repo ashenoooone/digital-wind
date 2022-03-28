@@ -34,7 +34,7 @@ const CourseTheory = (props) => {
                 {item.courseModuleHeaderSteps.map((el, elementId) => {
                   return (
                     <li key={elementId} className={Style["theory__list-text"]}>
-                      {el.description}
+                      {el.title}
                     </li>
                   );
                 })}

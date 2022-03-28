@@ -31,7 +31,7 @@ const Slider = () => {
                 title={card.title}
                 description={card.description}
                 time={card.duration}
-                img={cardImgFirst}
+                img={card.link}
               />
             );
           })}
