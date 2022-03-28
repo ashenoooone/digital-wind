@@ -4,6 +4,7 @@ import Style from "../Theory.module.css";
 import Acordion from "./Acordion/Acordion";
 
 const TheoryItem = (props) => {
+  console.log(props.module);
   const [openAccordion, setOpenAccordion] = React.useState(false);
   return (
     <div
@@ -13,7 +14,7 @@ const TheoryItem = (props) => {
         <div className={Style["course__content"]}>
           <h2 className={Style["course__content-title"]}>{props.level}</h2>
           <p className={Style["course__content-number"]}>
-            {props.module} модулей
+            {props.module.length} модулей
           </p>
         </div>
         <div className={Style["course__acordion"]}>
@@ -30,8 +31,8 @@ const TheoryItem = (props) => {
             openAccordion && Style["course__info_active"]
           }`}
         >
-          {props.content.map((item) => (
-            <Acordion title={item} />
+          {props.module.map((item, id) => (
+            <Acordion key={id} title={item} />
           ))}
         </div>
       </div>

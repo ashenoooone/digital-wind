@@ -4,10 +4,13 @@ import courseImage from "../../images/courseImage.png";
 import courseZnak from "../../images/courseZnak.svg";
 import star from "../../images/star.svg";
 import CourseTheory from "./CourseTheory/CourseTheory";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 
 const Course = () => {
   const courseInfo = useLocation().state;
+  const navigate = useNavigate();
+  const goToTaskPage = () => navigate("/theory", { state: courseInfo.modules });
+  console.log(courseInfo);
   return (
     <div className={Style["content"]}>
       <div className={Style["card"]}>
@@ -96,7 +99,7 @@ const Course = () => {
                 видеоматериалов
               </p>
             </div>
-            <button className={Style["theory__button"]}>
+            <button className={Style["theory__button"]} onClick={goToTaskPage}>
               Начать проходить курс
             </button>
           </div>
