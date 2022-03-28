@@ -4,7 +4,6 @@ import Style from "../Theory.module.css";
 import Acordion from "./Acordion/Acordion";
 
 const TheoryItem = (props) => {
-  console.log(props.module);
   const [openAccordion, setOpenAccordion] = React.useState(false);
   return (
     <div

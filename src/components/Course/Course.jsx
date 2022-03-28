@@ -5,12 +5,17 @@ import courseZnak from "../../images/courseZnak.svg";
 import star from "../../images/star.svg";
 import CourseTheory from "./CourseTheory/CourseTheory";
 import { useLocation, useNavigate } from "react-router-dom";
+import { useAuth } from "../../hooks/useAuth";
+import api from "../../utils/Api";
 
 const Course = () => {
   const courseInfo = useLocation().state;
   const navigate = useNavigate();
-  const goToTaskPage = () => navigate("/theory", { state: courseInfo.modules });
-  console.log(courseInfo);
+  const { token } = useAuth();
+  const goToTaskPage = () =>
+    api
+      .joinCourse(courseInfo.id, token)
+      .then((res) => navigate("/theory", { state: courseInfo.modules }));
   return (
     <div className={Style["content"]}>
       <div className={Style["card"]}>
