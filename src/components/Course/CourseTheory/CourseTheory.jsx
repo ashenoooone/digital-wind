@@ -3,51 +3,7 @@ import Style from "../Course.module.css";
 import courseButtonUp from "../../../images/courseButtonUp.svg";
 
 const CourseTheory = (props) => {
-  // const api = [
-  //   {
-  //     title: "Веб-вёрстка. Базовый уровень",
-  //     content: [
-  //       "Введение",
-  //       "Базовый HTML.",
-  //       "Базовый CSS. Часть 1.",
-  //       "Базовый CSS. Часть 2.",
-  //       "Подготовка к вёрстке.",
-  //       "Layout. HTML-разметка.",
-  //       "Layout. Flexbox.",
-  //       "Layout. Стилизация.",
-  //       "Продвинутый HTML. Формы.",
-  //       "Продвинутый CSS. Часть 1.",
-  //       "Продвинутый CSS. Часть 2.",
-  //       "Адаптивность. Десктоп.",
-  //       "Адаптивность. Мобильные устройства.",
-  //       "JavaScript для верстальщика.",
-  //       "Доступность.",
-  //       "Кросс-браузерность.",
-  //       "База знаний.",
-  //       "Сетки.",
-  //       "Работа с хостингом.",
-  //       "Анимация.",
-  //     ],
-  //   },
-  //   {
-  //     title: "JavaScript. Базовый уровень",
-  //     content: [
-  //       "Введение.",
-  //       "Переменные и работа с числами.",
-  //       "Строки, boolean и условные операторы.",
-  //       "Массивы и циклы.",
-  //       "Функции.",
-  //       "Объекты.",
-  //       "Введение в DOM.",
-  //       "Введение в DOM. Часть 2.",
-  //       "Константы, области видимости и замыкания.",
-  //       "Преобразование типов и нестрогие сравнения.",
-  //       "Общение с сервером, async/await.",
-  //     ],
-  //   },
-  // ];
   const [isAnimate, setAnimate] = React.useState(false);
-  console.log(props.header);
   return (
     <div
       className={`${Style["theory__course-container"]} ${
@@ -75,7 +31,7 @@ const CourseTheory = (props) => {
             <div key={id}>
               <h2 className={Style["theory__list-title"]}>{item.title}</h2>
               <ul>
-                {item.step.map((el, elementId) => {
+                {item.courseModuleHeaderSteps.map((el, elementId) => {
                   return (
                     <li key={elementId} className={Style["theory__list-text"]}>
                       {el.description}

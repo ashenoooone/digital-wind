@@ -8,13 +8,6 @@ import { useLocation } from "react-router-dom";
 
 const Course = () => {
   const courseInfo = useLocation().state;
-  console.log(courseInfo);
-  const allTheory = [
-    { title: "1. Базовый уровень" },
-    { title: "2. Продвинутый уровень" },
-    { title: "3. Онлайн-сессии по веб-разработке" },
-    { title: "4. Итоговые проекты" },
-  ];
   return (
     <div className={Style["content"]}>
       <div className={Style["card"]}>
@@ -94,7 +87,7 @@ const Course = () => {
             <div className={Style["theory__content"]}>
               <p className={Style["theory__module"]}>
                 <span className={Style["theory__number-blue"]}>
-                  {courseInfo.module.length}
+                  {courseInfo.modules.length}
                 </span>{" "}
                 модулей
               </p>
@@ -109,11 +102,11 @@ const Course = () => {
           </div>
           <div className={Style["theory__all-course"]}>
             <div className={Style["theory__course"]}>
-              {courseInfo.module.map((item, id) => (
+              {courseInfo.modules.map((item) => (
                 <CourseTheory
-                  key={id}
+                  key={item.id}
                   title={item.levelName}
-                  header={item.header}
+                  header={item.courseModuleHeaders}
                 />
               ))}
             </div>
