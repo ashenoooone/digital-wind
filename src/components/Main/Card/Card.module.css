@@ -46,6 +46,7 @@
   padding: 8px 32px;
   box-sizing: border-box;
   display: flex;
+  cursor: pointer;
   width: 212px;
   height: 35px;
   margin: 16px 0 0;
