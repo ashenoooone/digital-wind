@@ -48,14 +48,14 @@
 
 .profile__courses {
   display: flex;
+  flex-direction: column;
   padding-top: 60px;
   column-gap: 100px;
 }
-.profile__courses-current,
-.profile__courses-completed {
-  display: flex;
-  flex-direction: column;
-  row-gap: 20px;
+.profile__courses-current {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(2, minmax(300px, 1fr));
 }
 .profile__form-item {
   display: flex;
