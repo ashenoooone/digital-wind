@@ -11,6 +11,16 @@ const Login = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const [isError, setIsError] = React.useState("");
+  const {
+    register,
+    formState: { errors, isValid },
+    handleSubmit,
+    reset,
+    watch,
+  } = useForm({
+    mode: "onChange",
+  });
+  const fieldEmail = watch("email", false);
   const onSubmit = (data) => {
     api
       .login(data)
@@ -28,17 +38,13 @@ const Login = () => {
         reset();
       })
       .catch((er) => {
-        setIsError("Некорректные данные");
+        api.checkEmail(fieldEmail).then((res) => {
+          res
+            ? setIsError("Неправильный пароль")
+            : setIsError("Неправильная почта");
+        });
       });
   };
-  const {
-    register,
-    formState: { errors, isValid },
-    handleSubmit,
-    reset,
-  } = useForm({
-    mode: "onChange",
-  });
   return (
     <section className="login">
       <div className="login__container">

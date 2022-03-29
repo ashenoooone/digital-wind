@@ -64,7 +64,7 @@ class Api {
 
   getUserProfile(token) {
     return fetch(`${this._baseUrl}/user/profile?token=${token}`, {
-      method: 'GET',
+      method: "GET",
     }).then((res) => this._getCheckData(res));
   }
 
@@ -79,7 +79,7 @@ class Api {
     return fetch(
       `${this._baseUrl}/user/joinCourse?course_id=${courseId}&token=${id}`,
       {
-        method: 'GET',
+        method: "GET",
         headers: this._header,
       }
     ).then((res) => this._getCheckData(res));
@@ -93,6 +93,14 @@ class Api {
         headers: this._header,
       }
     ).then((res) => this._getCheckData(res));
+  }
+
+  checkEmail(mail) {
+    return fetch(`${this._baseUrl}/auth/checkEmail`, {
+      method: "POST",
+      headers: this._header,
+      body: JSON.stringify({ email: mail }),
+    }).then((res) => this._getCheckData(res));
   }
 }
 
