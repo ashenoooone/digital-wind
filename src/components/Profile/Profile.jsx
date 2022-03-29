@@ -58,7 +58,7 @@ const Profile = () => {
 
   React.useEffect(() => {
     api.getUserCourses(token).then((res) => {
-      setCourses([...courses, ...res.course]);
+      setCourses([...res.course]);
     });
   }, []);
 
@@ -82,7 +82,11 @@ const Profile = () => {
         >
           <h1 className='profile__name'>{`${name} ${surname}`}</h1>
           <p className='profile__email'>{email}</p>
-          <button onClick={() => quit()} type='button' className='button'>
+          <button
+            onClick={() => quit()}
+            type='button'
+            className='button profile__quit-button'
+          >
             Выйти из аккаунта
           </button>
         </div>

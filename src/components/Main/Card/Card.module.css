@@ -78,10 +78,6 @@
     flex-direction: column;
     justify-content: space-between;
   }
-
-  .slider__card:first-child {
-    margin-left: 20px;
-  }
   .slider__card-description {
     margin-bottom: 4px;
   }
