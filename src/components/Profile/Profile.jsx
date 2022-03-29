@@ -211,6 +211,8 @@ const Profile = () => {
                   description={description}
                   duration={duration}
                   img={cardImgFirst}
+                  button={'Продолжить курс'}
+                  flag={true}
                 />
               );
             })

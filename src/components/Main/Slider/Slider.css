@@ -15,7 +15,7 @@
 }
 
 .slider__title {
-  font-family: 'Rubik', arial, helvetica, sans-serif;
+  font-family: "Rubik", arial, helvetica, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 48px;
@@ -25,7 +25,7 @@
 }
 
 .slider__subtitle {
-  font-family: 'Rubik', arial, helvetica, sans-serif;
+  font-family: "Rubik", arial, helvetica, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -52,9 +52,6 @@
 .slider__cards::-webkit-scrollbar-thumb {
   background-color: #2f80ed;
   border-radius: 7px;
-}
-
-.slider-card {
 }
 
 .slider-card:first-child {
