@@ -51,7 +51,7 @@
 
 @media screen and (max-width: 768px) {
   .courses {
-    padding: 76px 20px 40px;
+    padding: 105px 20px 40px;
   }
   .courses__table {
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
