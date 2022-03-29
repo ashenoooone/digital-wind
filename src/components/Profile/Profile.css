@@ -165,7 +165,7 @@
     line-height: 21px;
   }
 }
-@media screen and (max-width: 407px) {
+@media screen and (max-width: 470px) {
   .profile__settings-button {
     width: 30px;
     height: 30px;

@@ -13,7 +13,17 @@ import RequierAuth from "./hoc/RequierAuth";
 import CourseInner from "./components/CourseInner/CourseInner";
 import IsAlreadyAuth from "./hoc/IsAlreadyAuth";
 import Theory from "./components/Theory/Theory";
+import { useLocation } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { closeMenu } from "./components/store/slices/menuSlice";
+
 function App() {
+  const dispatch = useDispatch();
+  const location = useLocation();
+  React.useEffect(() => {
+    dispatch(closeMenu());
+  }, [location]);
+
   return (
     <Routes>
       <Route path="/" element={<Layout />}>
@@ -37,12 +47,6 @@ function App() {
           }
         />
         <Route path="courses" element={<Courses />} />
-        {/* <Route
-          path="course-inner"
-          element={
-            <CourseInner name="Веб-вёрстка. Базовый уровень" title="Введение" />
-          }
-        /> */}
         <Route
           path="profile"
           element={
