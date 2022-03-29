@@ -1,15 +1,16 @@
-import React from 'react';
-import { Link, useNavigate } from 'react-router-dom';
-import './Login.css';
-import loginImage from '../../images/login.svg';
-import { useForm } from 'react-hook-form';
-import api from '../../utils/Api';
-import { useDispatch } from 'react-redux';
-import { setUser } from '../store/slices/userSlice';
+import React from "react";
+import { Link, useNavigate } from "react-router-dom";
+import "./Login.css";
+import loginImage from "../../images/login.svg";
+import { useForm } from "react-hook-form";
+import api from "../../utils/Api";
+import { useDispatch } from "react-redux";
+import { setUser } from "../store/slices/userSlice";
 
 const Login = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
+  const [isError, setIsError] = React.useState("");
   const onSubmit = (data) => {
     api
       .login(data)
@@ -23,11 +24,11 @@ const Login = () => {
             id: res.id,
           })
         );
-        navigate('/profile', { replace: true });
+        navigate("/profile", { replace: true });
         reset();
       })
       .catch((er) => {
-        console.error(er);
+        setIsError("Некорректные данные");
       });
   };
   const {
@@ -36,42 +37,43 @@ const Login = () => {
     handleSubmit,
     reset,
   } = useForm({
-    mode: 'onChange',
+    mode: "onChange",
   });
   return (
-    <section className='login'>
-      <div className='login__container'>
-        <h1 className='login__title'>Войти</h1>
+    <section className="login">
+      <div className="login__container">
+        <h1 className="login__title">Войти</h1>
         <form
-          className='login__form'
+          className="login__form"
           onSubmit={handleSubmit(onSubmit)}
           noValidate
         >
+          <span className="login__error">{isError}</span>
           <input
-            className='login__input'
-            type='email'
-            placeholder='Почта'
-            {...register('email')}
+            className="login__input"
+            type="email"
+            placeholder="Почта"
+            {...register("email")}
           />
           <input
-            className='login__input'
-            type='password'
-            placeholder='Пароль'
-            {...register('password')}
+            className="login__input"
+            type="password"
+            placeholder="Пароль"
+            {...register("password")}
           />
-          <div className='login__buttons'>
+          <div className="login__buttons">
             <input
-              type='submit'
-              className='login__submit-button'
-              value='Войти'
+              type="submit"
+              className="login__submit-button"
+              value="Войти"
             />
-            <Link to='/register' className='login__registration-button'>
+            <Link to="/register" className="login__registration-button">
               Регистрация
             </Link>
           </div>
         </form>
       </div>
-      <img src={loginImage} alt='' className='login__image' />
+      <img src={loginImage} alt="" className="login__image" />
     </section>
   );
 };
