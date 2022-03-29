@@ -1,7 +1,7 @@
 .login {
   padding: 213px 0 180px;
   display: flex;
-  font-family: 'Rubik';
+  font-family: "Rubik";
   margin: 0 auto;
   flex: 1;
 }
@@ -14,7 +14,7 @@
   font-weight: 500;
   font-size: 48px;
   line-height: 57px;
-  margin: 0 0 61px;
+  margin: 0 0 46px;
   color: #2c415d;
 }
 .login__input {
@@ -24,6 +24,12 @@
   margin-bottom: 33px;
   padding: 12px 24px;
 }
+
+.login__error {
+  color: red;
+  padding: 0 0 5px;
+}
+
 .login__input:last-of-type {
   margin-bottom: 44px;
 }
