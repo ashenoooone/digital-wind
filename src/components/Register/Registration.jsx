@@ -9,8 +9,18 @@ import { useDispatch } from 'react-redux';
 import { setUser } from '../store/slices/userSlice';
 
 const Registration = () => {
+  const {
+    register,
+    formState: { errors, isValid },
+    handleSubmit,
+    reset,
+    watch,
+  } = useForm({
+    mode: 'onChange',
+  });
   const dispatch = useDispatch();
-
+  const [isError, setIsError] = React.useState('');
+  const mailField = watch('email');
   const onSubmit = (data) => {
     api
       .register(data)
@@ -28,18 +38,12 @@ const Registration = () => {
         reset();
       })
       .catch((er) => {
-        console.error(er);
-        reset();
+        api.checkEmail(mailField).then((res) => {
+          console.log(res);
+          res ? setIsError('Данная почта уже занята') : setIsError('Ошибка');
+        });
       });
   };
-  const {
-    register,
-    formState: { errors, isValid },
-    handleSubmit,
-    reset,
-  } = useForm({
-    mode: 'onChange',
-  });
 
   return (
     <section className='registration'>
@@ -151,6 +155,7 @@ const Registration = () => {
               },
             })}
           />
+          <span className='error-message registration-error'>{isError}</span>
           <div className='registration__buttons'>
             <input
               type='submit'

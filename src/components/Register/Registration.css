@@ -84,6 +84,10 @@
   color: #ff3636;
 }
 
+.registration-error {
+  margin: 0 0 5px 24px;
+}
+
 @media screen and (max-width: 1024px) {
   .registration {
     padding: 124px 0 82px;
