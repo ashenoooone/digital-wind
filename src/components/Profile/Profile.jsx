@@ -195,8 +195,8 @@ const Profile = () => {
         />
       </div>
       <div className="profile__courses">
+        <h2 className="profile__courses-title">Текущий курс</h2>
         <div className="profile__courses-current">
-          <h2 className="profile__courses-title">Текущий курс</h2>
           {courses.length ? (
             courses.map(({ title, description, duration, id }) => {
               return (
