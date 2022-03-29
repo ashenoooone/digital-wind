@@ -24,7 +24,7 @@ const Courses = () => {
               id={item.id}
               description={item.description}
               time={item.duration}
-              img={cardImgFirst}
+              img={item.link}
               title={item.title}
               button={"Подробнее о курсе"}
             />
