@@ -204,7 +204,7 @@ const Profile = () => {
         </h2>
         <div className="profile__courses-current">
           {courses.length ? (
-            courses.map(({ title, description, duration, id }) => {
+            courses.map(({ title, description, duration, id, link }) => {
               return (
                 <Card
                   key={id}
@@ -212,7 +212,7 @@ const Profile = () => {
                   title={title}
                   description={description}
                   time={duration}
-                  img={cardImgFirst}
+                  img={link}
                   button={"Продолжить курс"}
                   flag={true}
                 />
