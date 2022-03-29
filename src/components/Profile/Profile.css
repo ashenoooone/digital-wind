@@ -68,6 +68,7 @@
   background: #2f80ed;
   border-radius: 58px;
   box-sizing: border-box;
+  height: 41px;
   width: max-content;
   max-height: 43px;
   color: white;
@@ -115,7 +116,12 @@
   gap: 20px;
 }
 .empty-courses__image {
+  margin-top: 20px;
 }
+.empty-courses__link {
+  text-align: center;
+}
+
 @media screen and (max-width: 1439px) {
   .profile {
     padding: 173px 120px 80px;
@@ -129,5 +135,58 @@
 @media screen and (max-width: 1023px) {
   .profile__courses-current {
     grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width: 767px) {
+  .profile {
+    padding: 130px 20px 80px;
+  }
+  .profile__courses-current {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+  .profile__personal {
+  }
+  .profile__info {
+    margin-right: 10px;
+  }
+  .profile__avatar {
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+  }
+  .profile__name {
+    font-size: 28px;
+    line-height: 33px;
+  }
+  .profile__quit-button {
+  }
+  .profile__email {
+    font-size: 18px;
+    line-height: 21px;
+  }
+}
+@media screen and (max-width: 407px) {
+  .profile__settings-button {
+    width: 30px;
+    height: 30px;
+  }
+  .profile__quit-button {
+    font-size: 10px;
+    padding: 12px 20px;
+  }
+  .profile__name {
+    font-size: 18px;
+    margin-bottom: 10px;
+    line-height: 1;
+    overflow: hidden;
+    white-space: nowrap;
+    max-width: 44.6875vw;
+    display: block;
+    text-overflow: ellipsis;
+  }
+  .profile__email {
+    font-size: 11px;
+    line-height: 1;
+    margin-bottom: 20px;
   }
 }
