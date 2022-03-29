@@ -54,6 +54,14 @@
   border-radius: 7px;
 }
 
+.slider-card:first-child {
+  margin: 0 0 0 20px;
+}
+
+.slider-card:last-child {
+  margin: 0 20px 0 0;
+}
+
 .slider__row {
   display: flex;
   margin: 0 auto;

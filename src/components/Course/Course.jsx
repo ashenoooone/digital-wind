@@ -12,10 +12,15 @@ const Course = () => {
   const courseInfo = useLocation().state;
   const navigate = useNavigate();
   const { token } = useAuth();
+  console.log(token, courseInfo.id);
   const goToTaskPage = () =>
-    api
-      .joinCourse(courseInfo.id, token)
-      .then(() => navigate("/theory", { state: courseInfo.modules }));
+    api.isJoined(courseInfo.id, token).then((res) => {
+      res
+        ? navigate("/theory", { state: courseInfo.modules })
+        : api
+            .joinCourse(courseInfo.id, token)
+            .then(() => navigate("/theory", { state: courseInfo.modules }));
+    });
   return (
     <div className={Style["content"]}>
       <div className={Style["card"]}>

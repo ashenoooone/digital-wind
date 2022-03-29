@@ -32,6 +32,8 @@ const Slider = () => {
                 description={card.description}
                 time={card.duration}
                 img={card.link}
+                dopClass={"slider-card"}
+                button={"Подробнее о курсе"}
               />
             );
           })}
