@@ -10,16 +10,16 @@ import api from "../../utils/Api";
 
 const Course = () => {
   const courseInfo = useLocation().state;
+  console.log(courseInfo);
   const navigate = useNavigate();
   const { token } = useAuth();
-  console.log(token, courseInfo.id);
   const goToTaskPage = () =>
     api.isJoined(courseInfo.id, token).then((res) => {
       res
-        ? navigate("/theory", { state: courseInfo.modules })
+        ? navigate("/theory", { state: courseInfo })
         : api
             .joinCourse(courseInfo.id, token)
-            .then(() => navigate("/theory", { state: courseInfo.modules }));
+            .then(() => navigate("/theory", { state: courseInfo }));
     });
   return (
     <div className={Style["content"]}>
@@ -110,7 +110,7 @@ const Course = () => {
               </p>
             </div>
             <button className={Style["theory__button"]} onClick={goToTaskPage}>
-              Начать проходить курс
+              Записаться на курс
             </button>
           </div>
           <div className={Style["theory__all-course"]}>

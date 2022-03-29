@@ -6,7 +6,11 @@ import api from "../../../utils/Api";
 const Card = (props) => {
   const navigate = useNavigate();
   const goCourse = () =>
-    api.getCourse(props.id).then((res) => navigate("/course", { state: res }));
+    api.getCourse(props.id).then((res) => {
+      props?.flag
+        ? navigate("/theory", { state: res })
+        : navigate("/course", { state: res });
+    });
   return (
     <div
       key={props.id}

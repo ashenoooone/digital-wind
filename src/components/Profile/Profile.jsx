@@ -208,6 +208,7 @@ const Profile = () => {
                   duration={duration}
                   img={cardImgFirst}
                   button={"Продолжить курс"}
+                  flag={true}
                 />
               );
             })

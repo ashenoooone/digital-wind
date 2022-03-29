@@ -6,12 +6,13 @@ const Theory = () => {
   const info = useLocation().state;
   return (
     <div className={Style["content"]}>
-      <h1 className={Style["course__title"]}>Курс - Frontend-разработчик</h1>
+      <h1 className={Style["course__title"]}>{info.title}</h1>
       <div className={Style["course__items"]}>
-        {info.map((item, id) => {
+        {info.modules.map((item, id) => {
           return (
             <TheoryItem
               key={id}
+              id={item.id}
               level={item.levelName}
               title={item.title}
               module={item.courseModuleHeaders}
