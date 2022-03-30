@@ -12,13 +12,14 @@ const CourseInner = () => {
   const { courseId } = useParams();
   const navigate = useNavigate();
   const goToError = () => navigate("/error");
-  const back = (courseId, level, id) =>
-    navigate(`/description/${courseId}/${level}/${--id}`);
   const [data, setData] = React.useState(null);
   const [course, setCourse] = React.useState(null);
+  const [active, setActive] = React.useState(true);
   React.useEffect(() => {
     Promise.all([api.getTheoryContent(id), api.getCourse(courseId)])
       .then(([theoryContent, course]) => {
+        if (!theoryContent) setActive(!active);
+        else setActive(true);
         setData(theoryContent);
         setCourse(course.modules);
       })
@@ -68,14 +69,16 @@ const CourseInner = () => {
               Назад
             </button>
           )}
-          <button
-            onClick={() =>
-              navigate(`/description/${courseId}/${level}/${++id}`)
-            }
-            className="course-inner__button button"
-          >
-            Далее
-          </button>
+          {active && (
+            <button
+              onClick={() =>
+                navigate(`/description/${courseId}/${level}/${++id}`)
+              }
+              className="course-inner__button button"
+            >
+              Далее
+            </button>
+          )}
         </div>
       </div>
     </section>
