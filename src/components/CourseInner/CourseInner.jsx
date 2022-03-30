@@ -1,6 +1,6 @@
 import React from "react";
 import "./CourseInner.css";
-import { useLocation, useParams, useNavigate } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import white_burger from "../../images/white-burger.svg";
 import stroke_white from "../../images/stroke-white.svg";
 import NavigationItem from "./NavigationItem/NavigationItem";
@@ -16,6 +16,14 @@ const CourseInner = () => {
   const [course, setCourse] = React.useState(null);
   const [active, setActive] = React.useState(true);
   React.useEffect(() => {
+    const escapeHandler = (evt) => {
+      if (
+        !evt.target.classList.contains("nav") &&
+        !evt.target.classList.contains("nav__img")
+      )
+        setNav(false);
+    };
+    document.addEventListener("click", escapeHandler);
     Promise.all([api.getTheoryContent(id), api.getCourse(courseId)])
       .then(([theoryContent, course]) => {
         if (!theoryContent) setActive(!active);
@@ -24,6 +32,9 @@ const CourseInner = () => {
         setCourse(course.modules);
       })
       .catch(() => goToError());
+    return () => {
+      document.removeEventListener("click", escapeHandler);
+    };
   }, [level, id]);
   const [nav, setNav] = React.useState(false);
   return (

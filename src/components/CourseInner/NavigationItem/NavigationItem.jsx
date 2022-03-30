@@ -11,6 +11,7 @@ const NavigationItem = (props) => {
         {props?.content.map((item) => {
           return (
             <Link
+              style={{ color: "#b6b6b6", textDecoration: "none" }}
               key={item.id}
               to={`/description/${props.courseId}/${props.title}/${item.id}`}
             >

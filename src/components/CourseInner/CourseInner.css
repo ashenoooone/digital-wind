@@ -85,7 +85,7 @@
   opacity: 0.5;
 }
 .nav-active {
-  max-width: 200px;
+  max-width: 300px;
 }
 .nav__title {
   margin: 0;
@@ -97,6 +97,7 @@
 .nav__item {
   color: #b6b6b6;
   cursor: pointer;
+  text-decoration: none;
 }
 .nav__item:hover {
   color: white;

@@ -123,6 +123,18 @@
   margin: 0;
 }
 
+.course__info-link {
+  text-decoration: none;
+}
+
+.course__info-item:hover h2 {
+  color: #2f80ed;
+}
+
+.course__info-item:hover {
+  border-color: #2f80ed;
+}
+
 @media screen and (max-width: 1921px) {
   .content {
     padding: 173px 350px 80px;
