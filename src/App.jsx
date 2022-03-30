@@ -58,6 +58,10 @@ function App() {
         <Route path="course" element={<Course />} />
         <Route path="theory" element={<Theory />} />
         <Route path="description" element={<CourseInner />} />
+        <Route
+          path="description/:courseId/:level/:id"
+          element={<CourseInner />}
+        />
       </Route>
     </Routes>
   );

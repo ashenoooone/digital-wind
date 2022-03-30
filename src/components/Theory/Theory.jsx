@@ -3,21 +3,29 @@ import Style from "./Theory.module.css";
 import TheoryItem from "./TheoryItem/TheoryItem";
 import { useLocation } from "react-router-dom";
 const Theory = () => {
-  const info = useLocation().state;
+  let { title, modules } = useLocation().state;
+  modules = modules.sort((a, b) => {
+    return a.id - b.id;
+  });
   return (
     <div className={Style["content"]}>
-      <h1 className={Style["course__title"]}>{info.title}</h1>
+      <h1 className={Style["course__title"]}>{title}</h1>
       <div className={Style["course__items"]}>
-        {info.modules.map((item, id) => {
-          return (
-            <TheoryItem
-              key={id}
-              id={item.id}
-              level={item.levelName}
-              title={item.title}
-              module={item.courseModuleHeaders}
-            />
-          );
+        {modules.map((item) => {
+          return item.courseModuleHeaders.map((el) => {
+            return (
+              <TheoryItem
+                key={el.id}
+                id={el.id}
+                courseId={item.id}
+                level={item.levelName}
+                title={el.title}
+                number={el.courseModuleHeaderSteps.length}
+                module={el.courseModuleHeaderSteps}
+                // modules={info.modules}
+              />
+            );
+          });
         })}
       </div>
     </div>
