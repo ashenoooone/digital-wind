@@ -7,7 +7,7 @@
 }
 
 .creators__title {
-  font-family: "Rubik", Arial, Helvetica, sans-serif;
+  font-family: 'Rubik', Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 48px;
@@ -17,9 +17,8 @@
 }
 
 .creators__content {
-  display: grid;
-  grid-template-columns: repeat(3, 225px);
-  column-gap: 230px;
+  display: flex;
+  gap: 250px;
 }
 
 .creators__item {
@@ -35,7 +34,7 @@
 }
 
 .creators__name {
-  font-family: "Rubik", Arial, Helvetica, sans-serif;
+  font-family: 'Rubik', Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 24px;
@@ -46,7 +45,7 @@
 
 .creators__job {
   margin: 0;
-  font-family: "Rubik", Arial, Helvetica, sans-serif;
+  font-family: 'Rubik', Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -54,6 +53,21 @@
   color: rgba(44, 65, 93, 0.8);
 }
 
+.creators__link {
+  font-size: 13px;
+  text-decoration: none;
+  width: max-content;
+  border: 0;
+  display: block;
+  color: #2c415d;
+  margin-top: 10px;
+  box-sizing: border-box;
+}
+.creators__link:hover {
+  border-bottom: 2px solid #2c415d;
+  opacity: 0.9;
+  margin-bottom: -2px;
+}
 @media screen and (max-width: 1439px) {
   .creators__content {
     column-gap: 100px;
@@ -74,13 +88,6 @@
 
   .creators__job {
     font-size: 15px;
-  }
-}
-
-@media screen and (max-width: 1023px) {
-  .creators__content {
-    grid-template-columns: repeat(3, minmax(auto-fit, 225px));
-    column-gap: 25px;
   }
 }
 

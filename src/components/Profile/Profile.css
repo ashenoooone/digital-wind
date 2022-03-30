@@ -26,6 +26,9 @@
   height: 40px;
   width: 40px;
 }
+.profile__settings-button:hover {
+  opacity: 0.9;
+}
 .profile__settings-button-hiden {
   display: none;
 }
@@ -138,6 +141,20 @@
   }
 }
 @media screen and (max-width: 767px) {
+  .profile__form {
+    width: 100%;
+    grid-template-columns: 1fr;
+  }
+  .profile__button {
+    font-size: 12px;
+    padding: 12px 20px;
+  }
+  .profile__input {
+    width: 100%;
+    overflow: hidden;
+    display: block;
+    text-overflow: ellipsis;
+  }
   .profile {
     padding: 130px 20px 80px;
   }
