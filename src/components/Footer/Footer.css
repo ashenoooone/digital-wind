@@ -1,11 +1,11 @@
-.footer__author {
-  color: #5a7394;
-  margin: 0;
-}
-
 .footer__contacts {
   display: flex;
   align-items: center;
+}
+
+.footer__digital-logo {
+  width: 150px;
+  height: 50px;
 }
 
 .footer__container {
@@ -44,6 +44,7 @@
   width: 197px;
   height: 40px;
   margin-right: 100px;
+  cursor: pointer;
 }
 
 .footer__nav {
