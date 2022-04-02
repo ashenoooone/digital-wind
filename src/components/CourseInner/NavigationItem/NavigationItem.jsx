@@ -4,21 +4,23 @@ import "react-router-dom";
 import { Link } from "react-router-dom";
 
 const NavigationItem = (props) => {
+  const data = props.content.sort((a, b) => a.id - b.id);
   return (
     <>
       <h2 className="nav__title">{props.title}</h2>
       <ul className="nav__list">
-        {props?.content.map((item) => {
-          return (
-            <Link
-              style={{ color: "#b6b6b6", textDecoration: "none" }}
-              key={item.id}
-              to={`/description/${props.courseId}/${props.title}/${item.id}`}
-            >
-              <li className="nav__item">{item?.title}</li>
-            </Link>
-          );
-        })}
+        {data &&
+          data.map((item) => {
+            return (
+              <Link
+                style={{ color: "#b6b6b6", textDecoration: "none" }}
+                key={item.id}
+                to={`/description/${props.courseId}/${props.title}/${item.id}`}
+              >
+                <li className="nav__item">{item?.title}</li>
+              </Link>
+            );
+          })}
       </ul>
     </>
   );

@@ -31,7 +31,7 @@ const CourseInner = () => {
         if (!theoryContent) setActive(!active);
         else setActive(true);
         setData(theoryContent);
-        setCourse(course.modules);
+        setCourse(course.modules.sort((a, b) => a.id - b.id));
       })
       .catch(() => goToError());
     return () => {
