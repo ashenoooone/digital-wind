@@ -11,16 +11,25 @@ import api from '../../utils/Api';
 
 const Course = () => {
   const courseInfo = useLocation().state;
+  const data = courseInfo.modules.sort((a, b) => a.id - b.id);
   const navigate = useNavigate();
-  const { token } = useAuth();
-  const goToTaskPage = () =>
-    api.isJoined(courseInfo.id, token).then((res) => {
-      res
-        ? navigate('/theory', { state: courseInfo })
-        : api
-            .joinCourse(courseInfo.id, token)
-            .then(() => navigate('/theory', { state: courseInfo }));
-    });
+  const { token, isAuth } = useAuth();
+  const goToRegister = () => {
+    navigate('/register');
+  };
+  const goToTaskPage = () => {
+    if (!isAuth) {
+      return goToRegister();
+    } else {
+      return api.isJoined(courseInfo.id, token).then((res) => {
+        res
+          ? navigate('/theory', { state: courseInfo })
+          : api
+              .joinCourse(courseInfo.id, token)
+              .then(() => navigate('/theory', { state: courseInfo }));
+      });
+    }
+  };
   return (
     <div className={Style['content']}>
       <div className={Style['card']}>
@@ -102,11 +111,7 @@ const Course = () => {
                 <span className={Style['theory__number-blue']}>
                   {courseInfo.modules.length}
                 </span>{' '}
-                модулей
-              </p>
-              <p className={Style['theory__video']}>
-                <span className={Style['theory__number-blue']}>150</span>{' '}
-                видеоматериалов
+                {courseInfo.modules.length > 4 ? 'Модулей' : 'Модуля'}
               </p>
             </div>
             <button
@@ -118,7 +123,7 @@ const Course = () => {
           </div>
           <div className={Style['theory__all-course']}>
             <div className={Style['theory__course']}>
-              {courseInfo.modules.map((item) => (
+              {data.map((item) => (
                 <CourseTheory
                   key={item.id}
                   title={item.levelName}
