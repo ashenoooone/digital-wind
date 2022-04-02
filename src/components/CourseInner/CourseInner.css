@@ -11,6 +11,9 @@
 }
 .course-inner__container {
   padding: 20px 100px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
 }
 .course-inner__title {
   font-weight: 500;
@@ -19,6 +22,7 @@
   color: #2c415d;
   margin: 8px 0 32px;
 }
+
 .course-inner__par {
   font-weight: 400;
   font-size: 18px;
@@ -28,7 +32,8 @@
 .nav {
   background-color: #2c415d;
   padding: 10px;
-  position: absolute;
+  position: fixed;
+  overflow-y: scroll;
   color: white;
   width: 100%;
   height: 100%;
@@ -36,6 +41,15 @@
   box-sizing: border-box;
   transition: all 0.3s linear;
 }
+
+.nav::-webkit-scrollbar {
+  width: 0;
+}
+
+.course_disactive {
+  overflow-y: hidden;
+}
+
 .nav__container {
   display: flex;
   width: 100%;
@@ -51,15 +65,31 @@
 .nav__bar {
   transform: translateX(0px);
   margin-right: 20px;
+  overflow-y: scroll;
   transition: all 0.3s linear;
+  padding-bottom: 50px;
+}
+
+.course-inner__buttons {
+  align-self: center;
+}
+
+.course-inner__button:first-child {
+  margin-right: 20px;
+}
+
+.nav__bar::-webkit-scrollbar {
+  visibility: hidden;
 }
 .nav__img:hover {
   opacity: 0.5;
 }
 .nav-active {
-  max-width: 200px;
+  max-width: 300px;
 }
 .nav__title {
+  margin: 0;
+  font-size: 20px;
 }
 .nav__bar-inactive {
   transform: translateX(-200px);
@@ -67,6 +97,7 @@
 .nav__item {
   color: #b6b6b6;
   cursor: pointer;
+  text-decoration: none;
 }
 .nav__item:hover {
   color: white;

@@ -13,9 +13,7 @@ const TheoryItem = (props) => {
         <div className={Style["course__content"]}>
           <h2 className={Style["course__content-title"]}>{props.level}</h2>
           <p className={Style["course__content-number"]}>
-            {props.module[0]?.courseModuleHeaderSteps
-              ? props.module[0]?.courseModuleHeaderSteps.length + " "
-              : "0 "}
+            {props.module ? props.number + " " : "0 "}
             модулей
           </p>
         </div>
@@ -33,17 +31,18 @@ const TheoryItem = (props) => {
             openAccordion && Style["course__info_active"]
           }`}
         >
-          {props.module.map((item, id) =>
-            item.courseModuleHeaderSteps.map((el) => (
+          {props.module.map((item) => {
+            return (
               <Acordion
-                key={el.id}
-                id={el.id}
-                title={el.title}
-                content={el.description}
+                key={item.id}
+                id={item.id}
+                courseId={props.courseId}
+                title={item.title}
                 level={props.level}
+                content={item.description}
               />
-            ))
-          )}
+            );
+          })}
         </div>
       </div>
     </div>

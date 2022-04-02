@@ -13,7 +13,6 @@ const Course = () => {
   const courseInfo = useLocation().state;
   const navigate = useNavigate();
   const { token } = useAuth();
-  console.log(courseInfo.id, token);
   const goToTaskPage = () =>
     api.isJoined(courseInfo.id, token).then((res) => {
       res

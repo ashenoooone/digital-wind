@@ -102,6 +102,16 @@ class Api {
       body: JSON.stringify({ email: mail }),
     }).then((res) => this._getCheckData(res));
   }
+
+  getTheoryContent(id) {
+    return fetch(
+      `${this._baseUrl}/course/getCourseModuleHeaderSteps?id=${id}`,
+      {
+        method: "GET",
+        headers: this._header,
+      }
+    ).then((res) => this._getCheckData(res));
+  }
 }
 
 const api = new Api({
