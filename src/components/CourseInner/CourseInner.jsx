@@ -5,12 +5,14 @@ import white_burger from "../../images/white-burger.svg";
 import stroke_white from "../../images/stroke-white.svg";
 import NavigationItem from "./NavigationItem/NavigationItem";
 import api from "../../utils/Api";
+import { useHeader } from "../../hooks/useHeader";
 
 const CourseInner = () => {
   let { id } = useParams();
   const { level } = useParams();
   const { courseId } = useParams();
   const navigate = useNavigate();
+  const { isHeaderActive } = useHeader();
   const goToError = () => navigate("/error");
   const [data, setData] = React.useState(null);
   const [course, setCourse] = React.useState(null);
@@ -39,7 +41,11 @@ const CourseInner = () => {
   const [nav, setNav] = React.useState(false);
   return (
     <section className="course-inner">
-      <nav className={`nav ${nav && "nav-active"}`}>
+      <nav
+        className={`nav ${nav && "nav-active"} ${
+          !isHeaderActive ? "nav-adaptive-header" : ""
+        }`}
+      >
         <div className="nav__container">
           <img
             src={nav ? stroke_white : white_burger}
