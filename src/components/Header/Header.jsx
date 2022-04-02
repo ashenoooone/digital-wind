@@ -10,23 +10,25 @@ import avatar from '../../images/empty-avatar.svg';
 import { useMenu } from '../../hooks/useMenu';
 import { useDispatch } from 'react-redux';
 import { toggleMenu } from '../store/slices/menuSlice';
+import { useHeader } from '../../hooks/useHeader';
+import { showHeader, hideHeader } from '../store/slices/headerSlice';
 
 const Header = () => {
-  const [headerVisibility, setHeaderVisibility] = React.useState(true);
   const [burgerActive, setBurgerActive] = React.useState(false);
   const [pos, setPos] = React.useState(113);
   const dispatch = useDispatch();
   const { isAuth, name, surname } = useAuth();
   const { isMenuActive } = useMenu();
+  const { isHeaderActive } = useHeader();
   React.useEffect(() => {
     const scrollHandler = () => {
       if (window.scrollY >= 113 && window.scrollY > pos) {
-        setHeaderVisibility(false);
         setBurgerActive(false);
         setPos(window.scrollY);
+        dispatch(hideHeader());
       } else {
-        setHeaderVisibility(true);
         setPos(window.scrollY);
+        dispatch(showHeader());
       }
     };
     window.addEventListener('scroll', scrollHandler);
@@ -36,7 +38,7 @@ const Header = () => {
   }, [pos]);
 
   return (
-    <header className={headerVisibility ? `header` : `header header_hide`}>
+    <header className={isHeaderActive ? `header` : `header header_hide`}>
       <div>
         <Link to='digital-wind'>
           <img src={logo} alt='логотип' className='header__img' />

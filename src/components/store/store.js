@@ -12,10 +12,12 @@ import {
 } from 'redux-persist';
 import storage from 'redux-persist/lib/storage';
 import menuReducer from './slices/menuSlice';
+import headerReducer from './slices/headerSlice';
 
 const rootReducer = combineReducers({
   user: userReducer,
   menu: menuReducer,
+  header: headerReducer,
 });
 
 const persistConfig = {
