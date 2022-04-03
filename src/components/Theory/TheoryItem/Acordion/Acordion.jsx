@@ -10,7 +10,7 @@ const Acordion = (props) => {
       className={`${Style["course__info-link"]} ${
         !props.status && Style["disable"]
       }`}
-      to={`/description/${props.courseId}/${props.level}/${props.id}`}
+      to={`/description/${props.courseId}/${props.id}`}
     >
       <div
         className={`${Style["course__info-item"]} ${
