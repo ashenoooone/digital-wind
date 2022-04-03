@@ -48,7 +48,7 @@ const CourseInner = () => {
         <div className="nav__container">
           <img
             src={nav ? stroke_white : white_burger}
-            alt=""
+            alt="бургер"
             className="nav__img"
             onClick={() => setNav(!nav)}
           />
