@@ -1,6 +1,6 @@
 .registration {
   display: flex;
-  font-family: 'Rubik';
+  font-family: "Rubik";
   padding: 213px 0 172px;
   flex: 1;
   margin: 0 auto;
@@ -24,7 +24,7 @@
   flex-direction: column;
 }
 .registration__input {
-  font-family: 'Rubik';
+  font-family: "Rubik";
   border: 0;
   padding: 12px 24px;
   outline: 1px solid #9dafc8;
@@ -88,7 +88,7 @@
   margin: 0 0 5px 24px;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1023px) {
   .registration {
     padding: 124px 0 82px;
   }
