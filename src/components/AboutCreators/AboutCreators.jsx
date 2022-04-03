@@ -5,11 +5,11 @@ import Creators from "./Creators/Creators";
 
 function AboutCreators() {
   return (
-    <>
+    <div style={{ flex: "1" }}>
       <ProjectInfo />
       <Instruction />
       <Creators />
-    </>
+    </div>
   );
 }
 
