@@ -6,7 +6,6 @@ import Acordion from "./Acordion/Acordion";
 const TheoryItem = (props) => {
   const [openAccordion, setOpenAccordion] = React.useState(false);
   const data = props.module.sort((a, b) => a.id - b.id);
-  console.log(data);
   return (
     <div
       className={`${Style["course__item"]} ${openAccordion && Style["height"]}`}
