@@ -1,8 +1,9 @@
 .courses {
-  font-family: 'Rubik';
+  font-family: "Rubik";
   display: flex;
   flex-direction: column;
   padding: 213px 240px;
+  margin: 0 auto;
   flex: 1;
 }
 .courses__title {
