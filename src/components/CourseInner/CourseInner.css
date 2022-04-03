@@ -27,7 +27,9 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 150%;
+  font-family: 'Rubik';
   color: #2c415d;
+  white-space: pre-wrap;
 }
 .nav {
   background-color: #2c415d;
