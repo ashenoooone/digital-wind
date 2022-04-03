@@ -124,13 +124,13 @@
   margin: 0;
 }
 
-@media screen and (max-width: 1800px) {
+@media screen and (max-width: 1799px) {
   .header {
     padding: 38px 60px;
   }
 }
 
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1439px) {
   .header {
     padding: 15px 60px;
   }

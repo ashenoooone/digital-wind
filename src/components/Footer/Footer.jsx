@@ -8,6 +8,7 @@ import { Link } from 'react-router-dom';
 import digitalWindLogo from '../../images/digitalWindLogo.png';
 
 const Footer = () => {
+  console.log(window.innerWidth);
   return (
     <footer className='footer'>
       <div className='footer__container'>
