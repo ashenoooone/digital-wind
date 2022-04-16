@@ -16,6 +16,8 @@ import Theory from './components/Theory/Theory';
 import { useLocation } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { closeMenu } from './components/store/slices/menuSlice';
+import Header from './components/Header/Header';
+import Footer from './components/Footer/Footer';
 
 function App() {
   const dispatch = useDispatch();
@@ -25,9 +27,10 @@ function App() {
   }, [location]);
 
   return (
-    <Routes>
-      <Route path='/' element={<Layout />}>
-        <Route path='digital-wind' element={<Main />} />
+    <div className='content'>
+      <Header />
+      <Routes>
+        <Route path='/' element={<Main />} />
         <Route path='*' element={<NotFoundPage />} />
         <Route path='info' element={<AboutCreators />} />
         <Route
@@ -59,8 +62,9 @@ function App() {
         <Route path='theory' element={<Theory />} />
         <Route path='description' element={<CourseInner />} />
         <Route path='description/:courseId/:id' element={<CourseInner />} />
-      </Route>
-    </Routes>
+      </Routes>
+      <Footer />
+    </div>
   );
 }
 

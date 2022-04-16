@@ -40,7 +40,7 @@ const Header = () => {
   return (
     <header className={isHeaderActive ? `header` : `header header_hide`}>
       <div>
-        <Link to='digital-wind'>
+        <Link to='/'>
           <img src={logo} alt='логотип' className='header__img' />
         </Link>
       </div>
