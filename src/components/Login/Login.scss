@@ -1,26 +1,15 @@
 .login {
   padding: 213px 0 180px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   font-family: "Rubik";
   margin: 0 auto;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  flex: 1;
 }
-
 .login__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin-right: 198px;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
-
 .login__title {
   font-weight: 500;
   font-size: 48px;
@@ -28,11 +17,9 @@
   margin: 0 0 46px;
   color: #2c415d;
 }
-
 .login__input {
   border: 1px solid #9dafc8;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   border-radius: 58px;
   margin-bottom: 33px;
   padding: 12px 24px;
@@ -46,22 +33,12 @@
 .login__input:last-of-type {
   margin-bottom: 44px;
 }
-
 .login__submit-button {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: row;
+  justify-content: center;
   cursor: pointer;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   border: 0;
   color: white;
   font-size: 16px;
@@ -69,21 +46,17 @@
   background: #2f80ed;
   border-radius: 58px;
   margin-right: 48px;
-  -webkit-transition: all 0.2 ease;
   transition: all 0.2 ease;
 }
-
 .login__submit-button-inactive {
   background: #f3f3f3;
   color: #b6b6b6;
   pointer-events: none;
 }
-
 .login__submit-button:hover {
   background: rgba(47, 128, 237, 0.1);
   color: #2f80ed;
 }
-
 .login__registration-button {
   font-style: normal;
   font-weight: 400;
@@ -91,33 +64,18 @@
   line-height: 19px;
   color: #2c415d;
   text-decoration: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-transition: all 0.2 ease;
+  align-items: center;
   transition: all 0.2 ease;
 }
-
 .login__registration-button:hover {
   opacity: 0.5;
 }
-
 .login__form {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
-
 .login__buttons {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 

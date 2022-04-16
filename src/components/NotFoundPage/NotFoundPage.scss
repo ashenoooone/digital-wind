@@ -1,27 +1,16 @@
-@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
 .error {
   font-family: 'Rubik', sans-serif;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   padding: 173px 0 80px;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  flex-grow: 1;
 }
-
 .error-image {
   width: 828px;
   height: 428px;
 }
-
 .error-title {
   font-family: 'Rubik';
   font-weight: 500;
@@ -29,34 +18,28 @@
   line-height: 57px;
   color: #2c415d;
 }
-
 .error__return-button {
   background: #2f80ed;
   border-radius: 58px;
   text-decoration: none;
   padding: 12px 40px;
   cursor: pointer;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
   color: #ffffff;
 }
-
 .error__return-button:hover {
   color: #2f80ed;
   background: rgba(47, 128, 237, 0.1);
 }
-
 .error__return-button:active {
   outline: 1px solid #367cff;
 }
-
 .error__return-button {
   border: 0;
 }
-
 @media screen and (max-width: 768px) {
   .error-image {
     width: 320px;

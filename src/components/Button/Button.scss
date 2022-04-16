@@ -5,16 +5,13 @@
   color: white;
   text-decoration: none;
   border: 0;
-  -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
   cursor: pointer;
 }
-
 .button:hover {
   background: rgba(47, 128, 237, 0.1);
   color: #2f80ed;
 }
-
 .button:active {
   outline: 1px solid #367cff;
 }

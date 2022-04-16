@@ -1,16 +1,10 @@
 .reviews__card {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  flex-direction: column;
+  box-sizing: border-box;
   width: 100%;
   padding: 8px;
-  background: #e8f2ff;
+  background: rgba(232, 242, 255, 1);
 }
 
 .review__image {
@@ -35,13 +29,9 @@
 }
 
 .review__author {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin-top: auto;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
 .review__author-avatar {
@@ -73,6 +63,7 @@
     line-height: 27px;
     margin: 16px 0 8px;
   }
+
   .review__card-paragraph {
     font-size: 12px;
     line-height: 18px;

@@ -3,28 +3,16 @@
   border-radius: 24px;
   margin: 0;
   border: 1px solid #e4e4e4;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  box-sizing: border-box;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
 
 .slider__card-container {
   padding: 32px 29px 32px 32px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .slider__card-description {
@@ -56,16 +44,12 @@
   color: white;
   text-decoration: none;
   padding: 8px 32px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  box-sizing: border-box;
   display: flex;
   cursor: pointer;
   width: 212px;
   height: 35px;
   margin: 16px 0 0;
-  -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
 }
 
@@ -73,11 +57,9 @@
   background: rgba(47, 128, 237, 0.1);
   color: #2f80ed;
 }
-
 .slider__about_button:active {
   outline: 1px solid #367cff;
 }
-
 @media screen and (max-width: 767px) {
   .slider__card-container {
     padding: 0;
@@ -87,22 +69,15 @@
     height: 100px;
     padding: 0;
     margin-bottom: 8px;
-    -webkit-box-ordinal-group: 0;
-        -ms-flex-order: -1;
-            order: -1;
+    order: -1;
   }
   .slider__card-title {
     margin-bottom: 8px;
   }
   .slider__card {
     padding: 24px 20px;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    flex-direction: column;
+    justify-content: space-between;
   }
   .slider__card-description {
     margin-bottom: 4px;
@@ -111,7 +86,6 @@
     margin: 0;
   }
 }
-
 @media screen and (max-width: 1439px) {
   .slider__card-title {
     font-size: 22px;

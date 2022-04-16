@@ -3,29 +3,19 @@
   height: calc(100vh - 100px);
   position: absolute;
   padding: 32px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   background-color: white;
   top: 32px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-transition: all 0.5s linear;
   transition: all 0.5s linear;
-  right: -500px;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
 
+  right: -500px;
+  flex-direction: column;
+  justify-content: space-between;
+}
 .menu_active {
   right: -20px;
 }
-
 .menu__enter-button {
   padding: 12px 40px;
   background: #2f80ed;
@@ -33,12 +23,10 @@
   width: 128px;
   margin-bottom: 40px;
   height: 43px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   text-decoration: none;
   color: white;
 }
-
 .menu__link {
   font-size: 20px;
   line-height: 24px;
@@ -46,41 +34,25 @@
   text-decoration: none;
   margin-bottom: 32px;
 }
-
 .menu__top {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
-
 .menu__bottom {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 30px;
 }
-
 .menu__profile-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   text-decoration: none;
   margin-bottom: 40px;
 }
-
 .menu__profile-image {
   width: 44px;
   height: 44px;
   margin-right: 12px;
 }
-
 .menu__profile-name {
   font-weight: 500;
   font-size: 18px;
@@ -88,16 +60,10 @@
   color: #2c415d;
   margin: 0;
 }
-
 .menu__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
-
 .menu__close-button {
   width: 40px;
   height: 40px;

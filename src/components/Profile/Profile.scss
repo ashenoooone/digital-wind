@@ -1,53 +1,37 @@
 .profile {
   font-family: 'Rubik';
   padding: 173px 240px 80px;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  flex: 1;
 }
 
 .profile__personal {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 .profile__avatar {
   width: 150px;
   height: 150px;
   border-radius: 128px;
   margin-right: 40px;
 }
-
 .profile__info {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   margin-right: 32px;
 }
-
 .profile__info_hiden {
   display: none;
 }
-
 .profile__settings-button {
   cursor: pointer;
   height: 40px;
   width: 40px;
 }
-
 .profile__settings-button:hover {
   opacity: 0.9;
 }
-
 .profile__settings-button-hiden {
   display: none;
 }
-
 .profile__name {
   font-style: normal;
   font-weight: 500;
@@ -56,7 +40,6 @@
   line-height: 43px;
   color: #2c415d;
 }
-
 .profile__email {
   font-style: normal;
   font-weight: 400;
@@ -67,71 +50,46 @@
 }
 
 .profile__courses {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   padding-top: 60px;
-  -webkit-column-gap: 100px;
-          column-gap: 100px;
+  column-gap: 100px;
 }
-
 .profile__courses-current {
-  display: -ms-grid;
   display: grid;
   gap: 20px;
-  -ms-grid-columns: (minmax(300px, 1fr))[2];
-      grid-template-columns: repeat(2, minmax(300px, 1fr));
+  grid-template-columns: repeat(2, minmax(300px, 1fr));
 }
-
 .profile__form-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   position: relative;
 }
-
 .profile__button {
   padding: 12px 40px;
   border: 0;
   background: #2f80ed;
   border-radius: 58px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   height: 41px;
-  width: -webkit-max-content;
-  width: -moz-max-content;
   width: max-content;
   max-height: 43px;
   color: white;
 }
-
 .profile__form {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 24px;
 }
-
 .profile__form-hiden {
   display: none;
 }
-
 .profile__input {
   font-family: 'Rubik';
   border: 0;
   padding: 12px 24px;
   outline: 1px solid #9dafc8;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   border-radius: 58px;
 }
 
@@ -139,42 +97,30 @@
   outline: 1px solid #ffa4a4;
   color: #ff3636;
 }
-
 .profile-error {
   position: absolute;
   top: -40px;
 }
-
 .profile__button-inactive {
   background: #f3f3f3;
   color: #b6b6b6;
   pointer-events: none;
 }
-
 .profile__button:hover {
   background: rgba(47, 128, 237, 0.1);
   color: #2f80ed;
 }
-
 .profile__button:active {
   outline: 1px solid #367cff;
 }
-
 .empty-courses {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   gap: 20px;
 }
-
 .empty-courses__image {
   margin-top: 20px;
 }
-
 .empty-courses__link {
   text-align: center;
 }
@@ -184,25 +130,20 @@
     padding: 173px 120px 80px;
   }
 }
-
 @media screen and (max-width: 1279px) {
   .profile {
     padding: 173px 60px 80px;
   }
 }
-
 @media screen and (max-width: 1023px) {
   .profile__courses-current {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
   }
 }
-
 @media screen and (max-width: 767px) {
   .profile__form {
     width: 100%;
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
   }
   .profile__button {
     font-size: 12px;
@@ -218,8 +159,9 @@
     padding: 130px 20px 80px;
   }
   .profile__courses-current {
-    -ms-grid-columns: (minmax(280px, 1fr))[auto-fit];
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+  .profile__personal {
   }
   .profile__info {
     margin-right: 10px;
@@ -233,12 +175,13 @@
     font-size: 28px;
     line-height: 33px;
   }
+  .profile__quit-button {
+  }
   .profile__email {
     font-size: 18px;
     line-height: 21px;
   }
 }
-
 @media screen and (max-width: 470px) {
   .profile__settings-button {
     width: 30px;
